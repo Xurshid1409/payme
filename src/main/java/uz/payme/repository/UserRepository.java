@@ -14,7 +14,6 @@ public interface UserRepository extends JpaRepository<User, String> {
     @EntityGraph(attributePaths = "role")
     Optional<User> findByPhoneNumber(String phoneNumber);
 
-
     @Query("select u from User u where u.phoneNumber = ?1 or u.pinfl = ?2")
     Optional<User> findByPhoneNumberOrPinfl(String phoneNumber, String pinfl);
 
