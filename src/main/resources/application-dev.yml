@@ -1,0 +1,27 @@
+server:
+  port: 88
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payme
+    username: postgres
+    password: 2030306
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans:true
+  sql:
+    init:
+      mode: always
+logging:
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+  file:
+    name: paynet.log
+  level:
+    org.springframework.web: ERROR
+    org.hibernate: ERROR
+jwt:
+  secret: '[0-9.a-zA-z_]^+$TutorAcademy9891212skidU3AkjbgcNftrFbsdrxh^56409unjbgGfd528482'
