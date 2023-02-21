@@ -10,16 +10,10 @@ import lombok.NoArgsConstructor;
 public class Params {
 
     private String id;
-
     private Account account;
-
     private Integer amount;
-
     private Long time;
-
     private Integer reason;
-
     private Long from;
-
     private Long to;
 }

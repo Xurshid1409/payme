@@ -11,8 +11,6 @@ public class CheckPerformTransactionAllowResponse {
     // (баланс пользователя, данные о заказе).
     // Кроме того, добавляя объект additional, следует сообщить об этом техническому специалисту Payme Business.
     private AdditionalInfo additionalInfo;
-
     private Boolean allow = false;
-
 
 }
