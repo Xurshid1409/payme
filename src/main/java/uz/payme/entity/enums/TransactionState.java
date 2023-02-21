@@ -5,7 +5,6 @@ public enum TransactionState {
     STATE_DONE(2),
     STATE_CANCELED(-1),
     STATE_POST_CANCELED(-2);
-
     private Integer code;
 
     TransactionState(Integer code) {
@@ -16,7 +15,4 @@ public enum TransactionState {
         return code;
     }
 
-    public void setCode(Integer code) {
-        this.code = code;
-    }
 }

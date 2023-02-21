@@ -8,10 +8,8 @@ import lombok.Data;
 public class AdditionalInfo {
 
     private Long orderId;
-
     private Integer orderSum;
-
-    private String site = "pdp.uz";
+    private String site = " ";
 
     public AdditionalInfo(Long orderId, Integer orderSum) {
         this.orderId = orderId;
