@@ -148,13 +148,11 @@ public class PaycomService implements IPaycomService {
                     "order"));
             return false;
         }
-
         response.setResult(new CheckPerformTransactionAllowResponse(
                 new AdditionalInfo(order.getId(), order.getOrderSum()),
                 true));
         return true;
     }
-
 
     /**
      * YANGI TRANSACTION OCHISH UCHUN YOKI ESKISI BO'LSA UNI MUDDATI O'TMAGANLIGINI TEKSHIRAMIZ
@@ -423,7 +421,6 @@ public class PaycomService implements IPaycomService {
                     orderTransaction.getId().toString());
             transactions.add(transaction);
         }
-
         //PAYCOMGA Transaction LISTI YUBORILADI
         response.setResult(transactions);
     }
@@ -438,21 +435,14 @@ public class PaycomService implements IPaycomService {
     private boolean checkPaycomUserAuth(String basicAuth, JSONRPC2Response response) {
 
         basicAuth = basicAuth.substring("Basic".length()).trim();
-
         byte[] decode = Base64.getDecoder().decode(basicAuth);
-
         basicAuth = new String(decode, Charset.defaultCharset());
-
         String[] split = basicAuth.split(":", 2);
-
         Optional<Client> optionalClient = clientRepository.findByPhoneNumber("Paycom");
-
         if (optionalClient.isPresent()) {
             Client client = optionalClient.get();
             if (passwordEncoder.matches(split[1], client.getPassword())) {
-
                 UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(client, null, new ArrayList<>());
-
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }
         }
