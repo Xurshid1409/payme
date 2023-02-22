@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import uz.payme.json.PaycomRequestForm;
 import uz.payme.service.PaycomService;
 
-@RequestMapping("api/payme")
+@RequestMapping("/api/merchant")
 @RestController
 @RequiredArgsConstructor
 public class PaymeController {
