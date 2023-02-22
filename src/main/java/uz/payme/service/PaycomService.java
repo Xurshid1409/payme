@@ -36,15 +36,15 @@ public class PaycomService implements IPaycomService {
     private final Long TIME_EXPIRED_PAYCOM_ORDER = 43_200_000L;
 
     @Override
-    public JSONObject payWithPaycom(PaycomRequestForm requestForm, String authorization) {
+    public JSONObject payWithPaycom(PaycomRequestForm requestForm) {
 
         Params params = requestForm.getParams();
         JSONRPC2Response response = new JSONRPC2Response(params.getId());
 
-        //BASIC AUTH BO'SH BO'LSA YOKI XATO KELGAN BO'LSA ERROR RESPONSE BERAMIZ
-        if (authorization == null || checkPaycomUserAuth(authorization, response)) {
-            return response.toJSONObject();
-        }
+//        //BASIC AUTH BO'SH BO'LSA YOKI XATO KELGAN BO'LSA ERROR RESPONSE BERAMIZ
+//        if (authorization == null || checkPaycomUserAuth(authorization, response)) {
+//            return response.toJSONObject();
+//        }
 
         //PAYCOM QAYSI METHODDA KELAYOTGANLIGIGA QARAB ISH BAJARAMIZ
         switch (requestForm.getMethod()) {

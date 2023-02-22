@@ -14,8 +14,9 @@ public class PaymeController {
     private final PaycomService ipaycomService;
 
     @PostMapping
-    JSONObject post(@RequestBody PaycomRequestForm requestForm,
-                    @RequestHeader("Authorization") String authorization) {
-        return ipaycomService.payWithPaycom(requestForm, authorization);
+    JSONObject post(@RequestBody PaycomRequestForm requestForm)
+//                    @RequestHeader("Authorization") String authorization)
+                   {
+        return ipaycomService.payWithPaycom(requestForm);
     }
 }
