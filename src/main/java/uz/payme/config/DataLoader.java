@@ -17,10 +17,8 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        if (!clientRepository.existsByPhoneNumber("Paycom")) {
-            clientRepository.save(new Client("Paycom", passwordEncoder.encode("PaycomUchunParolEdiBu")));
-
-            clientRepository.save(new Client("+197001234567", passwordEncoder.encode("parolClient")));
+        if (!clientRepository.existsByPhoneNumber("paycom")) {
+            clientRepository.save(new Client("paycom", passwordEncoder.encode("KEY")));
         }
     }
 }

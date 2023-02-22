@@ -8,7 +8,7 @@ import uz.payme.json.PaycomRequestForm;
 @Service
 public interface IPaycomService {
 
-    JSONObject payWithPaycom(PaycomRequestForm requestForm);
+    JSONObject payWithPaycom(PaycomRequestForm requestForm, String auth);
 
 
 }

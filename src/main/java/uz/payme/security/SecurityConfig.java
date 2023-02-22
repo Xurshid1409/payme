@@ -31,8 +31,8 @@ public class SecurityConfig {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeHttpRequests()
-                .requestMatchers("/api/payme/**").permitAll()
-                .requestMatchers("/api/**")
+                .antMatchers("/api/**","/swagger-ui/**","/api-docs/**").permitAll()
+                    .anyRequest()
                 .authenticated();
         http.exceptionHandling().authenticationEntryPoint(authEntryPoint);
         // Add our custom JWT security filter

@@ -1,393 +1,368 @@
-2023-02-21 17:04:17 - Starting PaymeApplication using Java 17.0.5 with PID 15224 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
-2023-02-21 17:04:17 - The following 1 profile is active: "dev"
-2023-02-21 17:04:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-21 17:04:18 - Finished Spring Data repository scanning in 37 ms. Found 6 JPA repository interfaces.
-2023-02-21 17:04:18 - Tomcat initialized with port(s): 88 (http)
-2023-02-21 17:04:18 - Starting service [Tomcat]
-2023-02-21 17:04:18 - Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-21 17:04:18 - Initializing Spring embedded WebApplicationContext
-2023-02-21 17:04:18 - Root WebApplicationContext: initialization completed in 739 ms
-2023-02-21 17:04:18 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-2023-02-21 17:04:18 - Stopping service [Tomcat]
-2023-02-21 17:04:18 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
-2023-02-21 17:04:18 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-02-21 17:04:18 - Application run failed
-org.springframework.context.ApplicationContextException: Unable to start web server
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:578)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
-	at uz.payme.PaymeApplication.main(PaymeApplication.java:10)
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:486)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:210)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
-	... 8 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:208)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:171)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:166)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:151)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235)
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5144)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:252)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:430)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:926)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
-	... 13 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
-	... 54 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
-	... 66 common frames omitted
-2023-02-21 17:04:58 - Starting PaymeApplication using Java 17.0.5 with PID 6448 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
-2023-02-21 17:04:58 - The following 1 profile is active: "dev"
-2023-02-21 17:04:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-21 17:04:58 - Finished Spring Data repository scanning in 42 ms. Found 6 JPA repository interfaces.
-2023-02-21 17:04:58 - Tomcat initialized with port(s): 88 (http)
-2023-02-21 17:04:58 - Starting service [Tomcat]
-2023-02-21 17:04:58 - Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-21 17:04:58 - Initializing Spring embedded WebApplicationContext
-2023-02-21 17:04:58 - Root WebApplicationContext: initialization completed in 678 ms
-2023-02-21 17:04:58 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-2023-02-21 17:04:58 - Stopping service [Tomcat]
-2023-02-21 17:04:58 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
-2023-02-21 17:04:58 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-02-21 17:04:58 - Application run failed
-org.springframework.context.ApplicationContextException: Unable to start web server
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:578)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
-	at uz.payme.PaymeApplication.main(PaymeApplication.java:10)
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:486)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:210)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
-	... 8 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:208)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:171)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:166)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:151)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235)
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5144)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:252)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:430)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:926)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
-	... 13 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
-	... 54 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
-	... 66 common frames omitted
-2023-02-21 17:07:16 - Starting PaymeApplication using Java 17.0.5 with PID 11480 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
-2023-02-21 17:07:16 - The following 1 profile is active: "dev"
-2023-02-21 17:07:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-21 17:07:17 - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
-2023-02-21 17:07:17 - Tomcat initialized with port(s): 88 (http)
-2023-02-21 17:07:17 - Starting service [Tomcat]
-2023-02-21 17:07:17 - Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-21 17:07:17 - Initializing Spring embedded WebApplicationContext
-2023-02-21 17:07:17 - Root WebApplicationContext: initialization completed in 679 ms
-2023-02-21 17:07:17 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-2023-02-21 17:07:17 - Stopping service [Tomcat]
-2023-02-21 17:07:17 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
-2023-02-21 17:07:17 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-02-21 17:07:17 - Application run failed
-org.springframework.context.ApplicationContextException: Unable to start web server
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:164)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:578)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291)
-	at uz.payme.PaymeApplication.main(PaymeApplication.java:10)
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:142)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:104)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:486)
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:210)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:183)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161)
-	... 8 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:798)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:245)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1344)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1188)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:208)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:171)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:166)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:151)
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:235)
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:52)
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5144)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:886)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1393)
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1383)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
-	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:252)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:430)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:926)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:485)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:123)
-	... 13 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenProvider': Injection of autowired dependencies failed
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:487)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1397)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1405)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:885)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:789)
-	... 54 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
-	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
-	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
-	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
-	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
-	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1346)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1325)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:709)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:692)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:133)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:481)
-	... 66 common frames omitted
-2023-02-21 17:07:58 - Starting PaymeApplication using Java 17.0.5 with PID 19376 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
-2023-02-21 17:07:58 - The following 1 profile is active: "dev"
-2023-02-21 17:07:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-21 17:07:59 - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
-2023-02-21 17:07:59 - Tomcat initialized with port(s): 88 (http)
-2023-02-21 17:07:59 - Starting service [Tomcat]
-2023-02-21 17:07:59 - Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-21 17:07:59 - Initializing Spring embedded WebApplicationContext
-2023-02-21 17:07:59 - Root WebApplicationContext: initialization completed in 688 ms
-2023-02-21 17:07:59 - Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'authenticationFilter' defined in file [D:\projects\payme\build\classes\java\main\uz\payme\security\AuthenticationFilter.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'uz.payme.security.JwtTokenProvider' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
-2023-02-21 17:07:59 - Stopping service [Tomcat]
-2023-02-21 17:07:59 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
-2023-02-21 17:07:59 - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-02-21 17:07:59 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Parameter 0 of constructor in uz.payme.security.AuthenticationFilter required a bean of type 'uz.payme.security.JwtTokenProvider' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'uz.payme.security.JwtTokenProvider' in your configuration.
-
-2023-02-21 17:08:48 - Starting PaymeApplication using Java 17.0.5 with PID 13552 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
-2023-02-21 17:08:48 - The following 1 profile is active: "dev"
-2023-02-21 17:08:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-21 17:08:48 - Finished Spring Data repository scanning in 40 ms. Found 6 JPA repository interfaces.
-2023-02-21 17:08:49 - Tomcat initialized with port(s): 88 (http)
-2023-02-21 17:08:49 - Starting service [Tomcat]
-2023-02-21 17:08:49 - Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-21 17:08:49 - Initializing Spring embedded WebApplicationContext
-2023-02-21 17:08:49 - Root WebApplicationContext: initialization completed in 690 ms
-2023-02-21 17:08:49 - HikariPool-1 - Starting...
-2023-02-21 17:08:49 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@426710f0
-2023-02-21 17:08:49 - HikariPool-1 - Start completed.
-2023-02-21 17:08:49 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2023-02-21 17:08:50 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-02-21 17:08:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-02-21 17:08:50 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79e33802, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@74471600, org.springframework.security.web.context.SecurityContextHolderFilter@531bfe4b, org.springframework.security.web.header.HeaderWriterFilter@3b44ed3c, org.springframework.web.filter.CorsFilter@1cc878e6, org.springframework.security.web.authentication.logout.LogoutFilter@6aff157e, uz.payme.security.AuthenticationFilter@7c9c7e7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77331437, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@98a0842, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@247877f3, org.springframework.security.web.session.SessionManagementFilter@cfe72b0, org.springframework.security.web.access.ExceptionTranslationFilter@170937fe, org.springframework.security.web.access.intercept.AuthorizationFilter@4c682826]
-2023-02-21 17:08:50 - Tomcat started on port(s): 88 (http) with context path ''
-2023-02-21 17:08:50 - Started PaymeApplication in 2.566 seconds (process running for 2.855)
-2023-02-21 17:10:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-02-21 17:10:20 - HikariPool-1 - Shutdown initiated...
-2023-02-21 17:10:20 - HikariPool-1 - Shutdown completed.
-2023-02-21 17:16:30 - Starting PaymeApplication using Java 17.0.5 with PID 17992 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
-2023-02-21 17:16:30 - The following 1 profile is active: "dev"
-2023-02-21 17:16:30 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-02-21 17:16:31 - Finished Spring Data repository scanning in 43 ms. Found 6 JPA repository interfaces.
-2023-02-21 17:16:31 - Tomcat initialized with port(s): 88 (http)
-2023-02-21 17:16:31 - Starting service [Tomcat]
-2023-02-21 17:16:31 - Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-02-21 17:16:31 - Initializing Spring embedded WebApplicationContext
-2023-02-21 17:16:31 - Root WebApplicationContext: initialization completed in 688 ms
-2023-02-21 17:16:31 - HikariPool-1 - Starting...
-2023-02-21 17:16:31 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@56da96b3
-2023-02-21 17:16:31 - HikariPool-1 - Start completed.
-2023-02-21 17:16:31 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2023-02-21 17:16:32 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-02-21 17:16:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-02-21 17:16:32 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2981064d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1dc9e4d2, org.springframework.security.web.context.SecurityContextHolderFilter@71e2ddd, org.springframework.security.web.header.HeaderWriterFilter@5be8a92c, org.springframework.web.filter.CorsFilter@7ef8899d, org.springframework.security.web.authentication.logout.LogoutFilter@3894d1b1, uz.payme.security.AuthenticationFilter@7f1b2f07, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@b97f195, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@408bb173, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@41bc501b, org.springframework.security.web.session.SessionManagementFilter@67cd1db3, org.springframework.security.web.access.ExceptionTranslationFilter@66c91224, org.springframework.security.web.access.intercept.AuthorizationFilter@3da12ba4]
-2023-02-21 17:16:32 - Tomcat started on port(s): 88 (http) with context path ''
-2023-02-21 17:16:32 - Started PaymeApplication in 2.522 seconds (process running for 2.82)
-2023-02-21 17:16:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-02-21 17:16:35 - HikariPool-1 - Shutdown initiated...
-2023-02-21 17:16:35 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:17:36 - Starting PaymeApplication using Java 17.0.5 with PID 13992 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:17:36 - The following 1 profile is active: "dev"
+2023-02-22 15:17:36 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:17:36 - Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:17:37 - Tomcat initialized with port(s): 88 (http)
+2023-02-22 15:17:37 - Starting service [Tomcat]
+2023-02-22 15:17:37 - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-02-22 15:17:37 - Initializing Spring embedded WebApplicationContext
+2023-02-22 15:17:37 - Root WebApplicationContext: initialization completed in 714 ms
+2023-02-22 15:17:37 - HikariPool-1 - Starting...
+2023-02-22 15:17:37 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@64c8fcfb
+2023-02-22 15:17:37 - HikariPool-1 - Start completed.
+2023-02-22 15:17:37 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-22 15:17:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:17:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:17:38 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3abd7b20, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@329a27ae, org.springframework.security.web.context.SecurityContextHolderFilter@2b826482, org.springframework.security.web.header.HeaderWriterFilter@2c8f7d6a, org.springframework.web.filter.CorsFilter@589a82af, org.springframework.security.web.authentication.logout.LogoutFilter@74471600, uz.payme.security.AuthenticationFilter@73072745, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@153c69bc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73cfafd8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5edce7da, org.springframework.security.web.session.SessionManagementFilter@60ae950f, org.springframework.security.web.access.ExceptionTranslationFilter@156d7556, org.springframework.security.web.access.intercept.AuthorizationFilter@58ca1cad]
+2023-02-22 15:17:38 - Tomcat started on port(s): 88 (http) with context path ''
+2023-02-22 15:17:38 - Started PaymeApplication in 2.692 seconds (process running for 3.021)
+2023-02-22 15:18:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:18:00 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:18:00 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:18:11 - Starting PaymeApplicationTests using Java 17.0.5 with PID 16708 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:18:11 - The following 1 profile is active: "dev"
+2023-02-22 15:18:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:18:11 - Finished Spring Data repository scanning in 49 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:18:12 - HikariPool-1 - Starting...
+2023-02-22 15:18:12 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cbdd1c5
+2023-02-22 15:18:12 - HikariPool-1 - Start completed.
+2023-02-22 15:18:12 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-22 15:18:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:18:13 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:18:14 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12f32f99, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73ab649f, org.springframework.security.web.context.SecurityContextHolderFilter@1de83be1, org.springframework.security.web.header.HeaderWriterFilter@7927209f, org.springframework.web.filter.CorsFilter@234dfc8e, org.springframework.security.web.authentication.logout.LogoutFilter@49231d79, uz.payme.security.AuthenticationFilter@7a91027c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a35cccf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ce067bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18918ab9, org.springframework.security.web.session.SessionManagementFilter@3bb6b9ab, org.springframework.security.web.access.ExceptionTranslationFilter@66075347, org.springframework.security.web.access.intercept.AuthorizationFilter@2438a038]
+2023-02-22 15:18:14 - Started PaymeApplicationTests in 3.166 seconds (process running for 3.936)
+2023-02-22 15:18:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:18:14 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:18:14 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:28:27 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 14924 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:28:27 - The following 1 profile is active: "dev"
+2023-02-22 15:28:27 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:28:27 - Finished Spring Data repository scanning in 37 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:28:28 - Tomcat initialized with port(s): 88 (http)
+2023-02-22 15:28:28 - Starting service [Tomcat]
+2023-02-22 15:28:28 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-22 15:28:28 - Initializing Spring embedded WebApplicationContext
+2023-02-22 15:28:28 - Root WebApplicationContext: initialization completed in 729 ms
+2023-02-22 15:28:28 - HikariPool-1 - Starting...
+2023-02-22 15:28:28 - HikariPool-1 - Start completed.
+2023-02-22 15:28:29 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:28:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:28:29 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@504274c1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16e5c19f, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ba9ed19, org.springframework.security.web.header.HeaderWriterFilter@79b0956e, org.springframework.web.filter.CorsFilter@59263f7b, org.springframework.security.web.authentication.logout.LogoutFilter@7c4a5ef2, uz.payme.security.AuthenticationFilter@6f69e2d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b53e6fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@641cea11, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7ddcd3d, org.springframework.security.web.session.SessionManagementFilter@ca2a03f, org.springframework.security.web.access.ExceptionTranslationFilter@e2344da, org.springframework.security.web.access.intercept.AuthorizationFilter@4e111e08]
+2023-02-22 15:28:29 - Tomcat started on port(s): 88 (http) with context path ''
+2023-02-22 15:28:29 - Started PaymeApplication in 2.613 seconds (JVM running for 2.922)
+2023-02-22 15:28:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:28:34 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:28:34 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:28:42 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 17868 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:28:42 - The following 1 profile is active: "dev"
+2023-02-22 15:28:42 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:28:42 - Finished Spring Data repository scanning in 38 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:28:43 - HikariPool-1 - Starting...
+2023-02-22 15:28:43 - HikariPool-1 - Start completed.
+2023-02-22 15:28:44 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:28:44 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:28:45 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55589ef5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23a9400c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ed5cc8c, org.springframework.security.web.header.HeaderWriterFilter@25c06894, org.springframework.web.filter.CorsFilter@793248d, org.springframework.security.web.authentication.logout.LogoutFilter@a74c940, uz.payme.security.AuthenticationFilter@7dbbf730, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@374bf34b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6efc9d3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6731b6bd, org.springframework.security.web.session.SessionManagementFilter@3599b18, org.springframework.security.web.access.ExceptionTranslationFilter@68b3de47, org.springframework.security.web.access.intercept.AuthorizationFilter@1d77d9c6]
+2023-02-22 15:28:45 - Started PaymeApplicationTests in 3.773 seconds (JVM running for 4.509)
+2023-02-22 15:28:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:28:46 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:28:46 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:29:26 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 10968 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:29:26 - The following 1 profile is active: "dev"
+2023-02-22 15:29:26 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:29:27 - Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:29:27 - HikariPool-1 - Starting...
+2023-02-22 15:29:27 - HikariPool-1 - Start completed.
+2023-02-22 15:29:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:29:29 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:29:29 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@793248d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6731b6bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bec566e, org.springframework.security.web.header.HeaderWriterFilter@5c2ae7d7, org.springframework.web.filter.CorsFilter@768f2398, org.springframework.security.web.authentication.logout.LogoutFilter@66576bd2, uz.payme.security.AuthenticationFilter@5f81507a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67aaf882, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294bb6ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f4fa465, org.springframework.security.web.session.SessionManagementFilter@143900a6, org.springframework.security.web.access.ExceptionTranslationFilter@5b827796, org.springframework.security.web.access.intercept.AuthorizationFilter@51eeae0a]
+2023-02-22 15:29:30 - Started PaymeApplicationTests in 3.724 seconds (JVM running for 4.475)
+2023-02-22 15:29:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:29:30 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:29:30 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:42:15 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 10080 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:42:15 - The following 1 profile is active: "dev"
+2023-02-22 15:42:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:42:15 - Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:42:16 - HikariPool-1 - Starting...
+2023-02-22 15:42:16 - HikariPool-1 - Start completed.
+2023-02-22 15:42:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:42:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:42:18 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21e15093, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62cf873a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45302e66, org.springframework.security.web.header.HeaderWriterFilter@4e553d60, org.springframework.web.filter.CorsFilter@21b3d356, org.springframework.security.web.authentication.logout.LogoutFilter@67aaf882, uz.payme.security.AuthenticationFilter@515fff35, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c468360, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e75bef1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@294b045b, org.springframework.security.web.session.SessionManagementFilter@322f84fd, org.springframework.security.web.access.ExceptionTranslationFilter@811d8d6, org.springframework.security.web.access.intercept.AuthorizationFilter@1ece052b]
+2023-02-22 15:42:18 - Started PaymeApplicationTests in 3.766 seconds (JVM running for 4.519)
+2023-02-22 15:42:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:42:19 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:42:19 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:45:22 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 20008 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:45:22 - The following 1 profile is active: "dev"
+2023-02-22 15:45:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:45:23 - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:45:24 - HikariPool-1 - Starting...
+2023-02-22 15:45:24 - HikariPool-1 - Start completed.
+2023-02-22 15:45:24 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:45:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:45:26 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@69f55ea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b370ca9, org.springframework.security.web.context.SecurityContextPersistenceFilter@71ac5723, org.springframework.security.web.header.HeaderWriterFilter@317fa5dd, org.springframework.web.filter.CorsFilter@3203a4ae, org.springframework.security.web.authentication.logout.LogoutFilter@78f1d29, uz.payme.security.AuthenticationFilter@7fa68ff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5857d723, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@294a3f2a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59301546, org.springframework.security.web.session.SessionManagementFilter@47400608, org.springframework.security.web.access.ExceptionTranslationFilter@6e7cb01a, org.springframework.security.web.access.intercept.AuthorizationFilter@207f7baa]
+2023-02-22 15:45:26 - Started PaymeApplicationTests in 3.816 seconds (JVM running for 4.574)
+2023-02-22 15:45:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:45:26 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:45:26 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:45:29 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 13416 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:45:29 - The following 1 profile is active: "dev"
+2023-02-22 15:45:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:45:29 - Finished Spring Data repository scanning in 34 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:45:30 - Tomcat initialized with port(s): 88 (http)
+2023-02-22 15:45:30 - Starting service [Tomcat]
+2023-02-22 15:45:30 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-22 15:45:30 - Initializing Spring embedded WebApplicationContext
+2023-02-22 15:45:30 - Root WebApplicationContext: initialization completed in 729 ms
+2023-02-22 15:45:30 - HikariPool-1 - Starting...
+2023-02-22 15:45:30 - HikariPool-1 - Start completed.
+2023-02-22 15:45:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:45:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:45:31 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34604b32, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@159408a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@641cea11, org.springframework.security.web.header.HeaderWriterFilter@37f627d0, org.springframework.web.filter.CorsFilter@5354bfce, org.springframework.security.web.authentication.logout.LogoutFilter@38e052b2, uz.payme.security.AuthenticationFilter@1b06dc57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4add4dff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@192ecf8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74901d7, org.springframework.security.web.session.SessionManagementFilter@3293030b, org.springframework.security.web.access.ExceptionTranslationFilter@21d48c40, org.springframework.security.web.access.intercept.AuthorizationFilter@2f11d889]
+2023-02-22 15:45:31 - Tomcat started on port(s): 88 (http) with context path ''
+2023-02-22 15:45:31 - Started PaymeApplication in 2.648 seconds (JVM running for 2.991)
+2023-02-22 15:45:57 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xa50x880xfc0x9e0x0f0x1f0x8f0xf50x05}X0x9cv,0x150x8c90x950xd2(#0xfb<0xac0xe60x1a0xf40xd00xda%0xfdt ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:45:57 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03K!}0xd90xd5c0xda0x0cQ0xddF0xe60xc20xd0i{#0xc8_0x86F0x900xea0xad0xc10x810xfb0xd1^0xf70xc30xf2 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:46:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:46:19 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:46:19 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:46:21 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 16368 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:46:21 - The following 1 profile is active: "dev"
+2023-02-22 15:46:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:46:21 - Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:46:22 - Tomcat initialized with port(s): 8088 (http)
+2023-02-22 15:46:22 - Starting service [Tomcat]
+2023-02-22 15:46:22 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-22 15:46:22 - Initializing Spring embedded WebApplicationContext
+2023-02-22 15:46:22 - Root WebApplicationContext: initialization completed in 726 ms
+2023-02-22 15:46:22 - HikariPool-1 - Starting...
+2023-02-22 15:46:22 - HikariPool-1 - Start completed.
+2023-02-22 15:46:22 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:46:23 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:46:23 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e7ddb7e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6905d030, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c528f2f, org.springframework.security.web.header.HeaderWriterFilter@2a9ea03f, org.springframework.web.filter.CorsFilter@641ab175, org.springframework.security.web.authentication.logout.LogoutFilter@4cd6f08b, uz.payme.security.AuthenticationFilter@1b06dc57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e2344da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79b0956e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3bc33ad9, org.springframework.security.web.session.SessionManagementFilter@7c8a91e2, org.springframework.security.web.access.ExceptionTranslationFilter@33214124, org.springframework.security.web.access.intercept.AuthorizationFilter@66b62332]
+2023-02-22 15:46:23 - Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-22 15:46:23 - Started PaymeApplication in 2.644 seconds (JVM running for 2.968)
+2023-02-22 15:46:47 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x060x0a0x010x000x060x060x030x03x0xdf0xdb0x8f0x020xca0xc30xbc0xe50xfe=0xc10xce0xe8X0xfc~hd'0x06z0xc8D0x8c0x1b0x9e0xd7?0xdd0x150xbb ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:46:57 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03y0xe9ms0x170xeb0x970xb6,Q0xb70xde0x0a0xa10x1f0xe00xc80xb8N0x100xa40xbd-0x08I0xb10xa70x010xfd0x8d0xf70xf2 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:47:03 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-22 15:48:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:48:03 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:48:03 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:48:05 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 9116 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:48:05 - The following 1 profile is active: "dev"
+2023-02-22 15:48:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:48:06 - Finished Spring Data repository scanning in 46 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:48:06 - Tomcat initialized with port(s): 8088 (http)
+2023-02-22 15:48:06 - Starting service [Tomcat]
+2023-02-22 15:48:06 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-22 15:48:06 - Initializing Spring embedded WebApplicationContext
+2023-02-22 15:48:06 - Root WebApplicationContext: initialization completed in 917 ms
+2023-02-22 15:48:06 - HikariPool-1 - Starting...
+2023-02-22 15:48:06 - HikariPool-1 - Start completed.
+2023-02-22 15:48:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:48:07 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:48:07 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3146f3d7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4220468, org.springframework.security.web.context.SecurityContextPersistenceFilter@192ecf8, org.springframework.security.web.header.HeaderWriterFilter@65d2d3cc, org.springframework.web.filter.CorsFilter@727e61ed, org.springframework.security.web.authentication.logout.LogoutFilter@64f613da, uz.payme.security.AuthenticationFilter@1b06dc57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@62c42a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c680fe1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3df681cc, org.springframework.security.web.session.SessionManagementFilter@4e3d36c2, org.springframework.security.web.access.ExceptionTranslationFilter@2fc0ad21, org.springframework.security.web.access.intercept.AuthorizationFilter@159408a7]
+2023-02-22 15:48:08 - Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-22 15:48:08 - Started PaymeApplication in 2.797 seconds (JVM running for 3.124)
+2023-02-22 15:48:10 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x030xb70x0e0xa60xafi0xc20xdc`0xb5'0xeb0xb70x1f0xedhz0xedB+lS0xd8.0xd20x1b0x020xede$Y0xbe0xa2 ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:48:10 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-22 15:48:11 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03^T0x190xfc^0xc4B0xf3V0x160x0d0xff0xdd0x970xc1tKeTg0xc30xe10xc7Uy0x1e{0x980x180xe40x880xaa ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:49:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:49:21 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:49:21 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:49:23 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 16924 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:49:23 - The following 1 profile is active: "dev"
+2023-02-22 15:49:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:49:24 - Finished Spring Data repository scanning in 34 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:49:24 - Tomcat initialized with port(s): 8088 (http)
+2023-02-22 15:49:24 - Starting service [Tomcat]
+2023-02-22 15:49:24 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-22 15:49:24 - Initializing Spring embedded WebApplicationContext
+2023-02-22 15:49:24 - Root WebApplicationContext: initialization completed in 728 ms
+2023-02-22 15:49:24 - HikariPool-1 - Starting...
+2023-02-22 15:49:25 - HikariPool-1 - Start completed.
+2023-02-22 15:49:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:49:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:49:26 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d1973e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ca10d0e, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b53e6fc, org.springframework.security.web.header.HeaderWriterFilter@21d48c40, org.springframework.web.filter.CorsFilter@34604b32, org.springframework.security.web.authentication.logout.LogoutFilter@34d3409d, uz.payme.security.AuthenticationFilter@1b06dc57, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@641cea11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4add4dff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@159408a7, org.springframework.security.web.session.SessionManagementFilter@3e24bab6, org.springframework.security.web.access.ExceptionTranslationFilter@79b0956e, org.springframework.security.web.access.intercept.AuthorizationFilter@2d1f9ec3]
+2023-02-22 15:49:26 - Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-22 15:49:26 - Started PaymeApplication in 2.651 seconds (JVM running for 3.003)
+2023-02-22 15:49:28 - Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name [0x160x030x010x020x000x010x000x010xfc0x030x03"0xd20xf20x8e~lm0xfd30x8fUv:0x98l0xce0xd8#0x060xed0xd50xc40x99IR0xa0x810xb70x0f0xee ]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:419)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-22 15:49:28 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-22 15:49:28 - Init duration for springdoc-openapi is: 128 ms
+2023-02-22 15:49:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:49:46 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:49:46 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:49:49 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 19972 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:49:49 - The following 1 profile is active: "dev"
+2023-02-22 15:49:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:49:49 - Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:49:50 - HikariPool-1 - Starting...
+2023-02-22 15:49:50 - HikariPool-1 - Start completed.
+2023-02-22 15:49:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:49:51 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:49:52 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21b3d356, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@294b045b, org.springframework.security.web.context.SecurityContextPersistenceFilter@382608d0, org.springframework.security.web.header.HeaderWriterFilter@45f6181a, org.springframework.web.filter.CorsFilter@285ac29, org.springframework.security.web.authentication.logout.LogoutFilter@294bb6ae, uz.payme.security.AuthenticationFilter@38e052b2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e75bef1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e489957, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ced1d14, org.springframework.security.web.session.SessionManagementFilter@10bcbbed, org.springframework.security.web.access.ExceptionTranslationFilter@6dcc7696, org.springframework.security.web.access.intercept.AuthorizationFilter@4c81e7c2]
+2023-02-22 15:49:52 - Started PaymeApplicationTests in 3.745 seconds (JVM running for 4.485)
+2023-02-22 15:49:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:49:53 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:49:53 - HikariPool-1 - Shutdown completed.
+2023-02-22 15:49:59 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 17544 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 15:49:59 - The following 1 profile is active: "dev"
+2023-02-22 15:49:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 15:49:59 - Finished Spring Data repository scanning in 57 ms. Found 6 JPA repository interfaces.
+2023-02-22 15:50:00 - HikariPool-1 - Starting...
+2023-02-22 15:50:00 - HikariPool-1 - Start completed.
+2023-02-22 15:50:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:50:01 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 15:50:02 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21e15093, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62cf873a, org.springframework.security.web.context.SecurityContextPersistenceFilter@45302e66, org.springframework.security.web.header.HeaderWriterFilter@4e553d60, org.springframework.web.filter.CorsFilter@21b3d356, org.springframework.security.web.authentication.logout.LogoutFilter@67aaf882, uz.payme.security.AuthenticationFilter@7fa68ff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c468360, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e75bef1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@294b045b, org.springframework.security.web.session.SessionManagementFilter@322f84fd, org.springframework.security.web.access.ExceptionTranslationFilter@811d8d6, org.springframework.security.web.access.intercept.AuthorizationFilter@1ece052b]
+2023-02-22 15:50:02 - Started PaymeApplicationTests in 4.161 seconds (JVM running for 4.924)
+2023-02-22 15:50:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 15:50:03 - HikariPool-1 - Shutdown initiated...
+2023-02-22 15:50:03 - HikariPool-1 - Shutdown completed.
+2023-02-22 16:04:47 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 20136 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 16:04:47 - The following 1 profile is active: "dev"
+2023-02-22 16:04:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 16:04:48 - Finished Spring Data repository scanning in 56 ms. Found 6 JPA repository interfaces.
+2023-02-22 16:04:48 - HikariPool-1 - Starting...
+2023-02-22 16:04:48 - HikariPool-1 - Start completed.
+2023-02-22 16:04:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:04:50 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 16:04:51 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@207f7baa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1067bc4c, org.springframework.security.web.context.SecurityContextPersistenceFilter@294bb6ae, org.springframework.security.web.header.HeaderWriterFilter@5a88849, org.springframework.web.filter.CorsFilter@69ee0861, org.springframework.security.web.authentication.logout.LogoutFilter@3c65f2e1, uz.payme.security.AuthenticationFilter@7fa68ff4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bb3294c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5857d723, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5de6c7d7, org.springframework.security.web.session.SessionManagementFilter@7ed5cc8c, org.springframework.security.web.access.ExceptionTranslationFilter@25c06894, org.springframework.security.web.access.intercept.AuthorizationFilter@376bae20]
+2023-02-22 16:04:51 - Started PaymeApplicationTests in 4.117 seconds (JVM running for 4.834)
+2023-02-22 16:04:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:04:51 - HikariPool-1 - Shutdown initiated...
+2023-02-22 16:04:51 - HikariPool-1 - Shutdown completed.
+2023-02-22 16:06:00 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 15732 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 16:06:00 - The following 1 profile is active: "dev"
+2023-02-22 16:06:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 16:06:00 - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2023-02-22 16:06:01 - HikariPool-1 - Starting...
+2023-02-22 16:06:01 - HikariPool-1 - Start completed.
+2023-02-22 16:06:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:06:02 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 16:06:03 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@285ac29, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ced1d14, org.springframework.security.web.context.SecurityContextPersistenceFilter@169d5567, org.springframework.security.web.header.HeaderWriterFilter@24d73c51, org.springframework.web.filter.CorsFilter@237b54bc, org.springframework.security.web.authentication.logout.LogoutFilter@f391e52, uz.payme.security.AuthenticationFilter@123d0816, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b827796, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d108063, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5263f554, org.springframework.security.web.session.SessionManagementFilter@45302e66, org.springframework.security.web.access.ExceptionTranslationFilter@4e553d60, org.springframework.security.web.access.intercept.AuthorizationFilter@21e15093]
+2023-02-22 16:06:03 - Started PaymeApplicationTests in 4.072 seconds (JVM running for 4.818)
+2023-02-22 16:06:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:06:04 - HikariPool-1 - Shutdown initiated...
+2023-02-22 16:06:04 - HikariPool-1 - Shutdown completed.
+2023-02-22 16:13:08 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 10464 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 16:13:08 - The following 1 profile is active: "dev"
+2023-02-22 16:13:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 16:13:08 - Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2023-02-22 16:13:09 - HikariPool-1 - Starting...
+2023-02-22 16:13:09 - HikariPool-1 - Start completed.
+2023-02-22 16:13:10 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:13:10 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 16:13:11 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f5a1ad4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7866ffa, org.springframework.security.web.context.SecurityContextPersistenceFilter@362fd4e9, org.springframework.security.web.header.HeaderWriterFilter@47400608, org.springframework.web.filter.CorsFilter@25d87313, org.springframework.security.web.authentication.logout.LogoutFilter@579ee82, uz.payme.security.AuthenticationFilter@66ab088c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2adce412, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d84ab90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c130cb2, org.springframework.security.web.session.SessionManagementFilter@84e43fb, org.springframework.security.web.access.ExceptionTranslationFilter@712594f4, org.springframework.security.web.access.intercept.AuthorizationFilter@40f77135]
+2023-02-22 16:13:12 - Started PaymeApplicationTests in 3.807 seconds (JVM running for 4.544)
+2023-02-22 16:13:12 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:13:12 - HikariPool-1 - Shutdown initiated...
+2023-02-22 16:13:12 - HikariPool-1 - Shutdown completed.
+2023-02-22 16:20:43 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 19952 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 16:20:43 - The following 1 profile is active: "dev"
+2023-02-22 16:20:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 16:20:44 - Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2023-02-22 16:20:44 - HikariPool-1 - Starting...
+2023-02-22 16:20:45 - HikariPool-1 - Start completed.
+2023-02-22 16:20:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:20:46 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-22 16:20:46 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a1c308b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d4dbb34, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c04ec8, org.springframework.security.web.header.HeaderWriterFilter@30a6984c, org.springframework.web.filter.CorsFilter@7af2ee23, org.springframework.security.web.authentication.logout.LogoutFilter@2adce412, uz.payme.security.AuthenticationFilter@66ab088c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36ce0bc2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4004bfba, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d10e2b6, org.springframework.security.web.session.SessionManagementFilter@b272860, org.springframework.security.web.access.ExceptionTranslationFilter@48ba37dc, org.springframework.security.web.access.intercept.AuthorizationFilter@452a32f2]
+2023-02-22 16:20:47 - Started PaymeApplicationTests in 3.909 seconds (JVM running for 4.678)
+2023-02-22 16:20:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:20:47 - HikariPool-1 - Shutdown initiated...
+2023-02-22 16:20:47 - HikariPool-1 - Shutdown completed.
+2023-02-22 16:35:06 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 7016 (started by xurshid_1989 in D:\projects\payme)
+2023-02-22 16:35:06 - The following 1 profile is active: "dev"
+2023-02-22 16:35:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-22 16:35:06 - Finished Spring Data repository scanning in 43 ms. Found 6 JPA repository interfaces.
+2023-02-22 16:35:07 - HikariPool-1 - Starting...
+2023-02-22 16:35:07 - HikariPool-1 - Start completed.
+2023-02-22 16:35:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:35:09 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a18e68a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@258291de, org.springframework.security.web.context.SecurityContextPersistenceFilter@47c422d3, org.springframework.security.web.header.HeaderWriterFilter@1c966488, org.springframework.web.filter.CorsFilter@4f63909f, org.springframework.security.web.authentication.logout.LogoutFilter@6efc9d3f, uz.payme.security.AuthenticationFilter@34d3409d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7841c990, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@169d5567, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ae91bcc, org.springframework.security.web.session.SessionManagementFilter@113cc14d, org.springframework.security.web.access.ExceptionTranslationFilter@57d7c511, org.springframework.security.web.access.intercept.AuthorizationFilter@77e261e3]
+2023-02-22 16:35:09 - Started PaymeApplicationTests in 3.798 seconds (JVM running for 4.61)
+2023-02-22 16:35:10 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-22 16:35:10 - HikariPool-1 - Shutdown initiated...
+2023-02-22 16:35:10 - HikariPool-1 - Shutdown completed.
