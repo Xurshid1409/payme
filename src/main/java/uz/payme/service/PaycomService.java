@@ -3,6 +3,7 @@ package uz.payme.service;
 import com.thetransactioncompany.jsonrpc2.JSONRPC2Error;
 import com.thetransactioncompany.jsonrpc2.JSONRPC2Response;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import net.minidev.json.JSONObject;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -27,6 +28,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class PaycomService implements IPaycomService {
     private final ClientRepository clientRepository;
     private final OrderRepository orderRepository;
@@ -39,6 +41,7 @@ public class PaycomService implements IPaycomService {
     public JSONObject payWithPaycom(PaycomRequestForm requestForm, String authorization) {
 
         Params params = requestForm.getParams();
+        log.info(requestForm.getMethod(), requestForm.getParams().getId(), requestForm.getId(), authorization);
         JSONRPC2Response response = new JSONRPC2Response(params.getId());
 
         //BASIC AUTH BO'SH BO'LSA YOKI XATO KELGAN BO'LSA ERROR RESPONSE BERAMIZ
@@ -67,6 +70,7 @@ public class PaycomService implements IPaycomService {
                 getStatement(requestForm, response);
                 break;
         }
+        log.info(response.toJSONString());
         return response.toJSONObject();
     }
 
@@ -383,6 +387,7 @@ public class PaycomService implements IPaycomService {
         }
 
         OrderTransaction orderTransaction = transactionId.get();
+//        log.info(orderTransaction.getReason().toString());
         response.setResult(new ResultForm(
                 orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
                 orderTransaction.getTransactionCreationTime().getTime(),

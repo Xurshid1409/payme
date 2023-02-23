@@ -10,6 +10,6 @@ import lombok.*;
 public class PaycomRequestForm {
 
     private String method;
-
     private Params params;
+    private Integer id;
 }
