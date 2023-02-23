@@ -485,3 +485,1109 @@ Identify and stop the process that's listening on port 8087 or configure this ap
 2023-02-23 12:12:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-02-23 12:12:52 - HikariPool-1 - Shutdown initiated...
 2023-02-23 12:12:52 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:13:23 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 7564 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:13:23 - The following 1 profile is active: "dev"
+2023-02-23 12:13:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:13:24 - Finished Spring Data repository scanning in 56 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:13:24 - HikariPool-1 - Starting...
+2023-02-23 12:13:25 - HikariPool-1 - Start completed.
+2023-02-23 12:13:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:13:26 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5b11d0d8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5cf39df6, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c28009f, org.springframework.security.web.header.HeaderWriterFilter@18d14de3, org.springframework.web.filter.CorsFilter@46ae897c, org.springframework.security.web.authentication.logout.LogoutFilter@330d16af, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25890ce3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25da1dc9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44846c76, org.springframework.security.web.session.SessionManagementFilter@7b38db21, org.springframework.security.web.access.ExceptionTranslationFilter@65294247, org.springframework.security.web.access.intercept.AuthorizationFilter@5345552f]
+2023-02-23 12:13:27 - Started PaymeApplicationTests in 3.869 seconds (JVM running for 4.633)
+2023-02-23 12:13:27 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:13:27 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:13:27 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:36:37 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 14360 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:36:37 - The following 1 profile is active: "dev"
+2023-02-23 12:36:37 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:36:37 - Finished Spring Data repository scanning in 57 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:36:38 - HikariPool-1 - Starting...
+2023-02-23 12:36:38 - HikariPool-1 - Start completed.
+2023-02-23 12:36:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:36:40 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45dfb6a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@202ba60a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f39ad3f, org.springframework.security.web.header.HeaderWriterFilter@3f2169e9, org.springframework.web.filter.CorsFilter@12ebcdf6, org.springframework.security.web.authentication.logout.LogoutFilter@23eb6d13, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@330d16af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@548c5127, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30dd23e2, org.springframework.security.web.session.SessionManagementFilter@138d978e, org.springframework.security.web.access.ExceptionTranslationFilter@6cfac0bd, org.springframework.security.web.access.intercept.AuthorizationFilter@6a9d572]
+2023-02-23 12:36:40 - Started PaymeApplicationTests in 3.853 seconds (JVM running for 4.675)
+2023-02-23 12:36:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:36:41 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:36:41 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:38:33 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 16272 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:38:33 - The following 1 profile is active: "dev"
+2023-02-23 12:38:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:38:33 - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:38:34 - HikariPool-1 - Starting...
+2023-02-23 12:38:34 - HikariPool-1 - Start completed.
+2023-02-23 12:38:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:38:36 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@160d68b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2af1bf5a, org.springframework.security.web.context.SecurityContextPersistenceFilter@173b24c4, org.springframework.security.web.header.HeaderWriterFilter@7891742e, org.springframework.web.filter.CorsFilter@1d77d9c6, org.springframework.security.web.authentication.logout.LogoutFilter@3986b9e9, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@642d971f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49c6ee4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c5b4b91, org.springframework.security.web.session.SessionManagementFilter@7612f385, org.springframework.security.web.access.ExceptionTranslationFilter@2b9615cb, org.springframework.security.web.access.intercept.AuthorizationFilter@88fc9cb]
+2023-02-23 12:38:36 - Started PaymeApplicationTests in 3.732 seconds (JVM running for 4.467)
+2023-02-23 12:38:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:38:36 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:38:36 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:38:46 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 6096 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:38:46 - The following 1 profile is active: "dev"
+2023-02-23 12:38:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:38:46 - Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:38:47 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:38:47 - Starting service [Tomcat]
+2023-02-23 12:38:47 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:38:47 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:38:47 - Root WebApplicationContext: initialization completed in 833 ms
+2023-02-23 12:38:47 - HikariPool-1 - Starting...
+2023-02-23 12:38:47 - HikariPool-1 - Start completed.
+2023-02-23 12:38:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:38:48 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c62c81f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a4d57b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c86b0ea, org.springframework.security.web.header.HeaderWriterFilter@41f5389f, org.springframework.web.filter.CorsFilter@a36ff0b, org.springframework.security.web.authentication.logout.LogoutFilter@421d7900, uz.payme.security.AuthenticationFilter@3ac326c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ba98508, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@524dd373, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ecf784f, org.springframework.security.web.session.SessionManagementFilter@1bcf2c64, org.springframework.security.web.access.ExceptionTranslationFilter@22c4354d, org.springframework.security.web.access.intercept.AuthorizationFilter@6cb759d5]
+2023-02-23 12:38:49 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:38:49 - Started PaymeApplication in 3.148 seconds (JVM running for 3.567)
+2023-02-23 12:40:24 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:40:27 - CheckTransaction
+2023-02-23 12:40:48 - {"id":"63f717e3432361b4e033fbdc","error":{"code":-31003,"data":"transaction","message":"Order transaction not found"},"jsonrpc":"2.0"}
+2023-02-23 12:41:29 - CheckTransaction
+2023-02-23 12:41:52 - {"result":{"reason":null,"performTime":0,"cancelTime":0,"createTime":1677139475573,"id":null,"state":1,"transaction":"1"},"id":"63f701f3432361b4e033fb8b","jsonrpc":"2.0"}
+2023-02-23 12:42:06 - CreateTransaction
+2023-02-23 12:42:16 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$DolsvE9V.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:197)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:58)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:42:32 - CreateTransaction
+2023-02-23 12:48:02 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m9s265ms508µs700ns).
+2023-02-23 12:48:02 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$DolsvE9V.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:197)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:58)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:48:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:48:02 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:48:02 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:48:04 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 12864 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:48:04 - The following 1 profile is active: "dev"
+2023-02-23 12:48:04 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:48:04 - Finished Spring Data repository scanning in 43 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:48:05 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:48:05 - Starting service [Tomcat]
+2023-02-23 12:48:05 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:48:05 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:48:05 - Root WebApplicationContext: initialization completed in 831 ms
+2023-02-23 12:48:05 - HikariPool-1 - Starting...
+2023-02-23 12:48:05 - HikariPool-1 - Start completed.
+2023-02-23 12:48:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:48:06 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5929059c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@256aabbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@40d04cf8, org.springframework.security.web.header.HeaderWriterFilter@257d3968, org.springframework.web.filter.CorsFilter@6b7a0f18, org.springframework.security.web.authentication.logout.LogoutFilter@524dd373, uz.payme.security.AuthenticationFilter@698e1bf5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@152d2a58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12478b4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@188058fb, org.springframework.security.web.session.SessionManagementFilter@5c0d3715, org.springframework.security.web.access.ExceptionTranslationFilter@4edd8a0a, org.springframework.security.web.access.intercept.AuthorizationFilter@232be28d]
+2023-02-23 12:48:07 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:48:07 - Started PaymeApplication in 3.224 seconds (JVM running for 3.611)
+2023-02-23 12:48:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:48:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:48:15 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:48:15 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:48:17 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 9148 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:48:17 - The following 1 profile is active: "dev"
+2023-02-23 12:48:17 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:48:17 - Finished Spring Data repository scanning in 40 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:48:18 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:48:18 - Starting service [Tomcat]
+2023-02-23 12:48:18 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:48:18 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:48:18 - Root WebApplicationContext: initialization completed in 818 ms
+2023-02-23 12:48:18 - HikariPool-1 - Starting...
+2023-02-23 12:48:18 - HikariPool-1 - Start completed.
+2023-02-23 12:48:18 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:48:19 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10660795, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ccc4ca0, org.springframework.security.web.context.SecurityContextPersistenceFilter@4803bf73, org.springframework.security.web.header.HeaderWriterFilter@69fe8c75, org.springframework.web.filter.CorsFilter@1dbfbd94, org.springframework.security.web.authentication.logout.LogoutFilter@12478b4e, uz.payme.security.AuthenticationFilter@698e1bf5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ce8084a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@347f8029, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@ec1b776, org.springframework.security.web.session.SessionManagementFilter@67baa05, org.springframework.security.web.access.ExceptionTranslationFilter@78f35e39, org.springframework.security.web.access.intercept.AuthorizationFilter@477d6f66]
+2023-02-23 12:48:20 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:48:20 - Started PaymeApplication in 3.15 seconds (JVM running for 3.578)
+2023-02-23 12:48:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:48:23 - CreateTransaction
+2023-02-23 12:49:36 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m17s825ms312µs100ns).
+2023-02-23 12:49:36 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$XjbUV6yB.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:197)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:58)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:49:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:49:36 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:49:36 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:49:38 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 8244 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:49:38 - The following 1 profile is active: "dev"
+2023-02-23 12:49:39 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:49:39 - Finished Spring Data repository scanning in 39 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:49:39 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:49:39 - Starting service [Tomcat]
+2023-02-23 12:49:39 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:49:39 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:49:39 - Root WebApplicationContext: initialization completed in 846 ms
+2023-02-23 12:49:39 - HikariPool-1 - Starting...
+2023-02-23 12:49:40 - HikariPool-1 - Start completed.
+2023-02-23 12:49:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:49:41 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65fa56f7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@232be28d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d67bf4d, org.springframework.security.web.header.HeaderWriterFilter@4edd8a0a, org.springframework.web.filter.CorsFilter@69c6e5, org.springframework.security.web.authentication.logout.LogoutFilter@1ba98508, uz.payme.security.AuthenticationFilter@3ac326c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40d04cf8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@152d2a58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e53bb4f, org.springframework.security.web.session.SessionManagementFilter@2119b989, org.springframework.security.web.access.ExceptionTranslationFilter@3331800f, org.springframework.security.web.access.intercept.AuthorizationFilter@256c6f7a]
+2023-02-23 12:49:41 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:49:41 - Started PaymeApplication in 3.321 seconds (JVM running for 3.755)
+2023-02-23 12:49:42 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:49:45 - CreateTransaction
+2023-02-23 12:49:52 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$jyq1tgM0.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:197)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:58)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:49:57 - CreateTransaction
+2023-02-23 12:50:52 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$jyq1tgM0.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:197)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:58)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:51:00 - CreateTransaction
+2023-02-23 12:51:52 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s933ms445µs).
+2023-02-23 12:51:52 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$jyq1tgM0.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:197)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:58)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:51:52 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:51:52 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:51:52 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:52:21 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 600 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:52:21 - The following 1 profile is active: "dev"
+2023-02-23 12:52:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:52:22 - Finished Spring Data repository scanning in 44 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:52:22 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:52:22 - Starting service [Tomcat]
+2023-02-23 12:52:22 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:52:22 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:52:22 - Root WebApplicationContext: initialization completed in 827 ms
+2023-02-23 12:52:22 - HikariPool-1 - Starting...
+2023-02-23 12:52:22 - HikariPool-1 - Start completed.
+2023-02-23 12:52:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:52:24 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5929059c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@256aabbe, org.springframework.security.web.context.SecurityContextPersistenceFilter@40d04cf8, org.springframework.security.web.header.HeaderWriterFilter@257d3968, org.springframework.web.filter.CorsFilter@6b7a0f18, org.springframework.security.web.authentication.logout.LogoutFilter@524dd373, uz.payme.security.AuthenticationFilter@698e1bf5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@152d2a58, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12478b4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@188058fb, org.springframework.security.web.session.SessionManagementFilter@5c0d3715, org.springframework.security.web.access.ExceptionTranslationFilter@4edd8a0a, org.springframework.security.web.access.intercept.AuthorizationFilter@232be28d]
+2023-02-23 12:52:24 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:52:24 - Started PaymeApplication in 3.262 seconds (JVM running for 3.645)
+2023-02-23 12:52:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:52:29 - CreateTransaction
+2023-02-23 12:52:38 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session] with root cause
+org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.entity.Order#1] - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at uz.payme.entity.Order$HibernateProxy$DmYkgu6Y.getOrderSum(Unknown Source)
+	at uz.payme.service.PaycomService.createTransaction(PaycomService.java:194)
+	at uz.payme.service.PaycomService.payWithPaycom(PaycomService.java:55)
+	at uz.payme.controller.PaymeController.post(PaymeController.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:111)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilterInternal(AuthorizationFilter.java:73)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at uz.payme.security.AuthenticationFilter.doFilterInternal(AuthenticationFilter.java:48)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-23 12:53:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:53:36 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:53:36 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:53:38 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 19780 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:53:38 - The following 1 profile is active: "dev"
+2023-02-23 12:53:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:53:38 - Finished Spring Data repository scanning in 40 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:53:39 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:53:39 - Starting service [Tomcat]
+2023-02-23 12:53:39 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:53:39 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:53:39 - Root WebApplicationContext: initialization completed in 856 ms
+2023-02-23 12:53:39 - HikariPool-1 - Starting...
+2023-02-23 12:53:39 - HikariPool-1 - Start completed.
+2023-02-23 12:53:40 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:53:41 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e3b4394, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@70ccb3bf, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ce8084a, org.springframework.security.web.header.HeaderWriterFilter@15c3585, org.springframework.web.filter.CorsFilter@10ffe32f, org.springframework.security.web.authentication.logout.LogoutFilter@18918d70, uz.payme.security.AuthenticationFilter@698e1bf5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@347f8029, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@630e5010, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13868c41, org.springframework.security.web.session.SessionManagementFilter@267b678f, org.springframework.security.web.access.ExceptionTranslationFilter@69fe8c75, org.springframework.security.web.access.intercept.AuthorizationFilter@3ccc4ca0]
+2023-02-23 12:53:41 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:53:41 - Started PaymeApplication in 3.288 seconds (JVM running for 3.684)
+2023-02-23 12:53:42 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:53:43 - CreateTransaction
+2023-02-23 12:54:02 - {"result":{"reason":null,"performTime":null,"cancelTime":null,"createTime":1677139475573,"id":null,"state":1,"transaction":"1"},"id":"63f701f3432361b4e033fb8b","jsonrpc":"2.0"}
+2023-02-23 12:54:18 - CreateTransaction
+2023-02-23 12:54:19 - {"id":"63f701f3432361b4e033fb8b","error":{"code":-31001,"data":"transaction","message":"Неверная сумма "},"jsonrpc":"2.0"}
+2023-02-23 12:54:22 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:54:22 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:54:22 - HikariPool-1 - Shutdown completed.
+2023-02-23 12:54:24 - Starting PaymeApplication using Java 17.0.5 on java_dev with PID 7304 (D:\projects\payme\build\classes\java\main started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:54:24 - The following 1 profile is active: "dev"
+2023-02-23 12:54:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:54:24 - Finished Spring Data repository scanning in 36 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:54:25 - Tomcat initialized with port(s): 8087 (https)
+2023-02-23 12:54:25 - Starting service [Tomcat]
+2023-02-23 12:54:25 - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-23 12:54:25 - Initializing Spring embedded WebApplicationContext
+2023-02-23 12:54:25 - Root WebApplicationContext: initialization completed in 744 ms
+2023-02-23 12:54:25 - HikariPool-1 - Starting...
+2023-02-23 12:54:25 - HikariPool-1 - Start completed.
+2023-02-23 12:54:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:54:26 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@16e5c19f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59263f7b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6e00d737, org.springframework.security.web.header.HeaderWriterFilter@57ac236a, org.springframework.web.filter.CorsFilter@7ddcd3d, org.springframework.security.web.authentication.logout.LogoutFilter@10ae002e, uz.payme.security.AuthenticationFilter@4023d23f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d7f966f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4113d9ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@447a557b, org.springframework.security.web.session.SessionManagementFilter@68fc636a, org.springframework.security.web.access.ExceptionTranslationFilter@5a45c218, org.springframework.security.web.access.intercept.AuthorizationFilter@3e0e3048]
+2023-02-23 12:54:26 - Tomcat started on port(s): 8087 (https) with context path ''
+2023-02-23 12:54:26 - Started PaymeApplication in 2.754 seconds (JVM running for 3.056)
+2023-02-23 12:54:43 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-23 12:54:43 - CreateTransaction
+2023-02-23 12:54:43 - {"id":"63f701f3432361b4e033fb8b","error":{"code":-31050,"data":"transaction12","message":"Ошибки неверного ввода данных покупателем account, например: не найден введёный логин, не найден введенный номер телефона и т.д. Локализованное поле message обязательно. Поле data должно содержать название субполя account."},"jsonrpc":"2.0"}
+2023-02-23 12:54:53 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 20120 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 12:54:53 - The following 1 profile is active: "dev"
+2023-02-23 12:54:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 12:54:54 - Finished Spring Data repository scanning in 46 ms. Found 6 JPA repository interfaces.
+2023-02-23 12:54:55 - HikariPool-1 - Starting...
+2023-02-23 12:54:55 - HikariPool-1 - Start completed.
+2023-02-23 12:54:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:54:57 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3857c5d5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@237824b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a317af7, org.springframework.security.web.header.HeaderWriterFilter@76c85485, org.springframework.web.filter.CorsFilter@52a8f789, org.springframework.security.web.authentication.logout.LogoutFilter@8d23cd8, uz.payme.security.AuthenticationFilter@1abea1ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a26eee6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76bdfc19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5345552f, org.springframework.security.web.session.SessionManagementFilter@127320df, org.springframework.security.web.access.ExceptionTranslationFilter@7f09ff10, org.springframework.security.web.access.intercept.AuthorizationFilter@1188e08b]
+2023-02-23 12:54:57 - Started PaymeApplicationTests in 4.103 seconds (JVM running for 4.839)
+2023-02-23 12:54:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 12:54:58 - HikariPool-1 - Shutdown initiated...
+2023-02-23 12:54:58 - HikariPool-1 - Shutdown completed.
+2023-02-23 13:01:15 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 10224 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 13:01:15 - The following 1 profile is active: "dev"
+2023-02-23 13:01:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 13:01:16 - Finished Spring Data repository scanning in 49 ms. Found 6 JPA repository interfaces.
+2023-02-23 13:01:16 - HikariPool-1 - Starting...
+2023-02-23 13:01:17 - HikariPool-1 - Start completed.
+2023-02-23 13:01:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 13:01:18 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55ba4bff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3705a85c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4be1c797, org.springframework.security.web.header.HeaderWriterFilter@13bf5fd, org.springframework.web.filter.CorsFilter@2284058a, org.springframework.security.web.authentication.logout.LogoutFilter@7f39ad3f, uz.payme.security.AuthenticationFilter@6b03c35c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c28009f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f4c3e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b11d0d8, org.springframework.security.web.session.SessionManagementFilter@26c1244c, org.springframework.security.web.access.ExceptionTranslationFilter@c247b02, org.springframework.security.web.access.intercept.AuthorizationFilter@3857c5d5]
+2023-02-23 13:01:19 - Started PaymeApplicationTests in 3.753 seconds (JVM running for 4.498)
+2023-02-23 13:01:19 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 13:01:19 - HikariPool-1 - Shutdown initiated...
+2023-02-23 13:01:19 - HikariPool-1 - Shutdown completed.
+2023-02-23 13:55:35 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 18224 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 13:55:35 - The following 1 profile is active: "dev"
+2023-02-23 13:55:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 13:55:35 - Finished Spring Data repository scanning in 62 ms. Found 6 JPA repository interfaces.
+2023-02-23 13:55:36 - HikariPool-1 - Starting...
+2023-02-23 13:55:36 - HikariPool-1 - Start completed.
+2023-02-23 13:55:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 13:55:38 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12ebcdf6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30dd23e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@16f15a4, org.springframework.security.web.header.HeaderWriterFilter@2eb03908, org.springframework.web.filter.CorsFilter@88fc9cb, org.springframework.security.web.authentication.logout.LogoutFilter@1ac71b87, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e80de85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@642d971f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@75693526, org.springframework.security.web.session.SessionManagementFilter@20a46227, org.springframework.security.web.access.ExceptionTranslationFilter@6075a4ea, org.springframework.security.web.access.intercept.AuthorizationFilter@5f1dadf4]
+2023-02-23 13:55:38 - Started PaymeApplicationTests in 3.822 seconds (JVM running for 4.608)
+2023-02-23 13:55:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 13:55:38 - HikariPool-1 - Shutdown initiated...
+2023-02-23 13:55:38 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:14:43 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 8116 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:14:43 - The following 1 profile is active: "dev"
+2023-02-23 14:14:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:14:44 - Finished Spring Data repository scanning in 44 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:14:45 - HikariPool-1 - Starting...
+2023-02-23 14:14:45 - HikariPool-1 - Start completed.
+2023-02-23 14:14:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:14:47 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45dfb6a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@202ba60a, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f39ad3f, org.springframework.security.web.header.HeaderWriterFilter@3f2169e9, org.springframework.web.filter.CorsFilter@12ebcdf6, org.springframework.security.web.authentication.logout.LogoutFilter@23eb6d13, uz.payme.security.AuthenticationFilter@6b03c35c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@330d16af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@548c5127, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30dd23e2, org.springframework.security.web.session.SessionManagementFilter@138d978e, org.springframework.security.web.access.ExceptionTranslationFilter@6cfac0bd, org.springframework.security.web.access.intercept.AuthorizationFilter@6a9d572]
+2023-02-23 14:14:47 - Started PaymeApplicationTests in 3.808 seconds (JVM running for 4.537)
+2023-02-23 14:14:47 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:14:47 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:14:47 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:18:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:18:31 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:18:31 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:18:35 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 2344 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:18:35 - The following 1 profile is active: "dev"
+2023-02-23 14:18:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:18:35 - Finished Spring Data repository scanning in 54 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:18:36 - HikariPool-1 - Starting...
+2023-02-23 14:18:36 - HikariPool-1 - Start completed.
+2023-02-23 14:18:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:18:38 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39a1c200, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@603a34e5, org.springframework.security.web.context.SecurityContextPersistenceFilter@173b24c4, org.springframework.security.web.header.HeaderWriterFilter@7891742e, org.springframework.web.filter.CorsFilter@160d68b8, org.springframework.security.web.authentication.logout.LogoutFilter@3986b9e9, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@642d971f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49c6ee4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2af1bf5a, org.springframework.security.web.session.SessionManagementFilter@7612f385, org.springframework.security.web.access.ExceptionTranslationFilter@2b9615cb, org.springframework.security.web.access.intercept.AuthorizationFilter@12ebcdf6]
+2023-02-23 14:18:38 - Started PaymeApplicationTests in 3.788 seconds (JVM running for 4.517)
+2023-02-23 14:18:38 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:18:38 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:18:38 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:21:47 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 13004 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:21:47 - The following 1 profile is active: "dev"
+2023-02-23 14:21:48 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:21:48 - Finished Spring Data repository scanning in 46 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:21:49 - HikariPool-1 - Starting...
+2023-02-23 14:21:49 - HikariPool-1 - Start completed.
+2023-02-23 14:21:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:21:51 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3705a85c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2284058a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c28009f, org.springframework.security.web.header.HeaderWriterFilter@18d14de3, org.springframework.web.filter.CorsFilter@5b11d0d8, org.springframework.security.web.authentication.logout.LogoutFilter@330d16af, uz.payme.security.AuthenticationFilter@1abea1ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25890ce3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25da1dc9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cf39df6, org.springframework.security.web.session.SessionManagementFilter@7b38db21, org.springframework.security.web.access.ExceptionTranslationFilter@65294247, org.springframework.security.web.access.intercept.AuthorizationFilter@237824b0]
+2023-02-23 14:21:51 - Started PaymeApplicationTests in 3.79 seconds (JVM running for 4.528)
+2023-02-23 14:21:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:21:51 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:21:51 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:25:54 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 13324 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:25:54 - The following 1 profile is active: "dev"
+2023-02-23 14:25:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:25:55 - Finished Spring Data repository scanning in 48 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:25:56 - HikariPool-1 - Starting...
+2023-02-23 14:25:56 - HikariPool-1 - Start completed.
+2023-02-23 14:25:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:25:58 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f1dadf4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d15f031, org.springframework.security.web.context.SecurityContextPersistenceFilter@20a46227, org.springframework.security.web.header.HeaderWriterFilter@6075a4ea, org.springframework.web.filter.CorsFilter@45dfb6a4, org.springframework.security.web.authentication.logout.LogoutFilter@4af50246, uz.payme.security.AuthenticationFilter@445f6f73, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7524125c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@330d16af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@202ba60a, org.springframework.security.web.session.SessionManagementFilter@1cc42abe, org.springframework.security.web.access.ExceptionTranslationFilter@6e149395, org.springframework.security.web.access.intercept.AuthorizationFilter@43d2c8e3]
+2023-02-23 14:25:58 - Started PaymeApplicationTests in 3.763 seconds (JVM running for 4.527)
+2023-02-23 14:25:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:25:58 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:25:58 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:33:33 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 19624 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:33:33 - The following 1 profile is active: "dev"
+2023-02-23 14:33:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:33:33 - Finished Spring Data repository scanning in 46 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:33:34 - HikariPool-1 - Starting...
+2023-02-23 14:33:34 - HikariPool-1 - Start completed.
+2023-02-23 14:33:35 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:33:36 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55ba4bff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3705a85c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1248f83, org.springframework.security.web.header.HeaderWriterFilter@32050628, org.springframework.web.filter.CorsFilter@2284058a, org.springframework.security.web.authentication.logout.LogoutFilter@7612f385, uz.payme.security.AuthenticationFilter@251e2f4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f4c3e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39b9dc35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b11d0d8, org.springframework.security.web.session.SessionManagementFilter@2a317af7, org.springframework.security.web.access.ExceptionTranslationFilter@76c85485, org.springframework.security.web.access.intercept.AuthorizationFilter@3857c5d5]
+2023-02-23 14:33:36 - Started PaymeApplicationTests in 3.87 seconds (JVM running for 4.614)
+2023-02-23 14:33:36 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:33:36 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:33:36 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:35:37 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 20308 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:35:37 - The following 1 profile is active: "dev"
+2023-02-23 14:35:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:35:38 - Finished Spring Data repository scanning in 50 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:35:39 - HikariPool-1 - Starting...
+2023-02-23 14:35:39 - HikariPool-1 - Start completed.
+2023-02-23 14:35:39 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:35:41 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55ba4bff, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3705a85c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4be1c797, org.springframework.security.web.header.HeaderWriterFilter@13bf5fd, org.springframework.web.filter.CorsFilter@2284058a, org.springframework.security.web.authentication.logout.LogoutFilter@7f39ad3f, uz.payme.security.AuthenticationFilter@6b03c35c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c28009f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f4c3e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b11d0d8, org.springframework.security.web.session.SessionManagementFilter@26c1244c, org.springframework.security.web.access.ExceptionTranslationFilter@c247b02, org.springframework.security.web.access.intercept.AuthorizationFilter@3857c5d5]
+2023-02-23 14:35:41 - Started PaymeApplicationTests in 3.733 seconds (JVM running for 4.465)
+2023-02-23 14:35:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:35:41 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:35:41 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:38:21 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 7224 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:38:21 - The following 1 profile is active: "dev"
+2023-02-23 14:38:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:38:21 - Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:38:22 - HikariPool-1 - Starting...
+2023-02-23 14:38:22 - HikariPool-1 - Start completed.
+2023-02-23 14:38:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:38:24 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2284058a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b11d0d8, org.springframework.security.web.context.SecurityContextPersistenceFilter@19b0a9f2, org.springframework.security.web.header.HeaderWriterFilter@469bd719, org.springframework.web.filter.CorsFilter@5cf39df6, org.springframework.security.web.authentication.logout.LogoutFilter@16f15a4, uz.payme.security.AuthenticationFilter@251e2f4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39b9dc35, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3976910, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46ae897c, org.springframework.security.web.session.SessionManagementFilter@54f4734e, org.springframework.security.web.access.ExceptionTranslationFilter@76c85485, org.springframework.security.web.access.intercept.AuthorizationFilter@52a8f789]
+2023-02-23 14:38:24 - Started PaymeApplicationTests in 3.749 seconds (JVM running for 4.498)
+2023-02-23 14:38:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:38:24 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:38:24 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:44:11 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 17784 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:44:11 - The following 1 profile is active: "dev"
+2023-02-23 14:44:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:44:12 - Finished Spring Data repository scanning in 46 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:44:12 - HikariPool-1 - Starting...
+2023-02-23 14:44:12 - HikariPool-1 - Start completed.
+2023-02-23 14:44:13 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:44:14 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3857c5d5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@237824b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2a317af7, org.springframework.security.web.header.HeaderWriterFilter@76c85485, org.springframework.web.filter.CorsFilter@52a8f789, org.springframework.security.web.authentication.logout.LogoutFilter@8d23cd8, uz.payme.security.AuthenticationFilter@6b03c35c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a26eee6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76bdfc19, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5345552f, org.springframework.security.web.session.SessionManagementFilter@127320df, org.springframework.security.web.access.ExceptionTranslationFilter@7f09ff10, org.springframework.security.web.access.intercept.AuthorizationFilter@1188e08b]
+2023-02-23 14:44:15 - Started PaymeApplicationTests in 3.805 seconds (JVM running for 4.526)
+2023-02-23 14:44:15 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:44:15 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:44:15 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:47:41 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 4628 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:47:41 - The following 1 profile is active: "dev"
+2023-02-23 14:47:41 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:47:41 - Finished Spring Data repository scanning in 40 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:47:42 - HikariPool-1 - Starting...
+2023-02-23 14:47:42 - HikariPool-1 - Start completed.
+2023-02-23 14:47:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:47:44 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52a8f789, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5345552f, org.springframework.security.web.context.SecurityContextPersistenceFilter@54f4734e, org.springframework.security.web.header.HeaderWriterFilter@4a7ac98b, org.springframework.web.filter.CorsFilter@55ba4bff, org.springframework.security.web.authentication.logout.LogoutFilter@20a46227, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76bdfc19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c28009f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3705a85c, org.springframework.security.web.session.SessionManagementFilter@6778636f, org.springframework.security.web.access.ExceptionTranslationFilter@ecfff32, org.springframework.security.web.access.intercept.AuthorizationFilter@5694f6a0]
+2023-02-23 14:47:45 - Started PaymeApplicationTests in 3.779 seconds (JVM running for 4.52)
+2023-02-23 14:47:45 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:47:45 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:47:45 - HikariPool-1 - Shutdown completed.
+2023-02-23 14:51:45 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 16696 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 14:51:45 - The following 1 profile is active: "dev"
+2023-02-23 14:51:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 14:51:46 - Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2023-02-23 14:51:47 - HikariPool-1 - Starting...
+2023-02-23 14:51:47 - HikariPool-1 - Start completed.
+2023-02-23 14:51:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:51:49 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d15f031, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45dfb6a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@669469c9, org.springframework.security.web.header.HeaderWriterFilter@5b0d480c, org.springframework.web.filter.CorsFilter@202ba60a, org.springframework.security.web.authentication.logout.LogoutFilter@45482f82, uz.payme.security.AuthenticationFilter@6b03c35c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7612f385, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16f15a4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12ebcdf6, org.springframework.security.web.session.SessionManagementFilter@6f071d0c, org.springframework.security.web.access.ExceptionTranslationFilter@19bbb216, org.springframework.security.web.access.intercept.AuthorizationFilter@8bb5c2a]
+2023-02-23 14:51:49 - Started PaymeApplicationTests in 3.827 seconds (JVM running for 4.568)
+2023-02-23 14:51:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 14:51:49 - HikariPool-1 - Shutdown initiated...
+2023-02-23 14:51:49 - HikariPool-1 - Shutdown completed.
+2023-02-23 15:00:58 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 19888 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 15:00:58 - The following 1 profile is active: "dev"
+2023-02-23 15:00:59 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 15:00:59 - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2023-02-23 15:00:59 - HikariPool-1 - Starting...
+2023-02-23 15:01:00 - HikariPool-1 - Start completed.
+2023-02-23 15:01:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 15:01:01 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e0dec27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3857c5d5, org.springframework.security.web.context.SecurityContextPersistenceFilter@e76134d, org.springframework.security.web.header.HeaderWriterFilter@78f1d29, org.springframework.web.filter.CorsFilter@237824b0, org.springframework.security.web.authentication.logout.LogoutFilter@20a46227, uz.payme.security.AuthenticationFilter@251e2f4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76bdfc19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c28009f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52a8f789, org.springframework.security.web.session.SessionManagementFilter@579ee82, org.springframework.security.web.access.ExceptionTranslationFilter@51bc649e, org.springframework.security.web.access.intercept.AuthorizationFilter@68aa1164]
+2023-02-23 15:01:02 - Started PaymeApplicationTests in 3.752 seconds (JVM running for 4.498)
+2023-02-23 15:01:02 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 15:01:02 - HikariPool-1 - Shutdown initiated...
+2023-02-23 15:01:02 - HikariPool-1 - Shutdown completed.
