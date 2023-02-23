@@ -125,7 +125,7 @@ public class PaycomService implements IPaycomService {
 
         //ORDER SUM BILAN PAYCOMDAN KELGAN SUM TENGLIGI TEKSHIRILYAPTI
         Order order = optionalOrder.get();
-        if (!order.getOrderSum().equals(requestForm.getParams().getAmount())) {
+        if (!Objects.equals(order.getOrderSum(), requestForm.getParams().getAmount())) {
             response.setError(new JSONRPC2Error(
                     -31001,
                     "Wrong amount",
@@ -163,315 +163,339 @@ public class PaycomService implements IPaycomService {
      * @param requestForm @RequestBody
      * @param response    JSONRPC2Response
      */
-//    private void createTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
-//
-//        //PAYCOM DAN KELGAN ID BO'YICHA TRASACTION OLYAPMIZ
-//        Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
-//        Optional<Order> order = orderRepository.findById(requestForm.getParams().getAccount().getOrder());
-//        OrderTransaction orderTransaction;
+    private void createTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
 
-//        if (order.isEmpty()) {
-//            response.setError(new JSONRPC2Error(
-//                    -31050,
-//                    "Ошибки неверного ввода данных покупателем account, например: не найден введёный логин, не найден введенный номер телефона и т.д.",
-//                    "transaction" + requestForm.getParams().getAccount().getOrder()));
-//            return;
-//        }
-//
-//        if (!Objects.equals(order.get().getOrderSum(), requestForm.getParams().getAmount())) {
-//            response.setError(new JSONRPC2Error(
-//                    -31001,
-//                    "Wrong sum",
-//                    "transaction"));
-//            return;
-//        }
-//
-//
-//        //AGAR OrderTransaction AVVAL YARATILGAN BO'LSA
-//        if (transactionId.isPresent()) {
-//            orderTransaction = transactionId.get();
-//
-//            //OrderTransaction STATE IN PROGRESS DA BO'LMASA XATO QAYTARAMIZ
-//            if (!orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
-//                response.setError(new JSONRPC2Error(
-//                        -31008,
-//                        "Unable to complete operation",
-//                        "transaction"));
-//                return;
-//            }
-//
-//            //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
-//            if (System.currentTimeMillis() - orderTransaction.getTransactionCreationTime().getTime() > TIME_EXPIRED_PAYCOM_ORDER) {
-//                response.setError(new JSONRPC2Error(
-//                        -31008,
-//                        "Unable to complete operation",
-//                        "transaction"));
-//
-//                //ORDER_TRANSACTION NI O'ZGARTIRIB SAQLAB QO'YAMIZ
-//                orderTransaction.setReason(4);
-//                orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
-//                orderTransactionRepository.save(orderTransaction);
-//                return;
-//            }
-//
-//        }
-//
-//        //OrderTransaction YARATILMAGAN BO'LSA
-//        else {
-//                //ORDER HAMMA JIHATDAN TO'G'RILIGINI TEKSHIRAMIZ
-//                boolean checkPerformTransaction = checkPerformTransaction(requestForm, response);
-//
-//                //AGAR ORDER XATO BO'LSA XATONI YUBORAMIZ
-//                if (!checkPerformTransaction) {
-//                    return;
-//                }
-//
-//                //YANGI OrderTransaction
-//                orderTransaction = new OrderTransaction(
-//                        requestForm.getParams().getId(),
-//                        new Timestamp(requestForm.getParams().getTime()),
-//                        TransactionState.STATE_IN_PROGRESS.getCode(),
-//                        requestForm.getParams().getAccount().getOrder());
-//                orderTransactionRepository.save(orderTransaction);
-//            }
-//
-//            //AVVAL SAQLANGAN MUDDATO O'TMAGAN OrderTransaction YOKI YANGI SAQLANGAN OrderTransaction NING MA'LUMOTLARI QAYTARILYAPTI
-//            response.setResult(new ResultForm(
-//                    orderTransaction.getTransactionCreationTime().getTime(),
-//                    orderTransaction.getState(),
-//                    orderTransaction.getId().toString()));
-//        }
-//
-//        /**
-//         * TO'LOVNI AMALGA OSHIRADIGAN METHOD
-//         * https://developer.help.paycom.uz/ru/metody-merchant-api/performtransaction
-//         *
-//         * @param requestForm @RequestBody
-//         * @param response    JSONRPC2Response
-//         */
-//        private void performTransaction (PaycomRequestForm requestForm, JSONRPC2Response response){
-//
-//            //PAYCOM DAN KELGAN ID BO'YICHA OrderTransaction NI QIDIRAMIZ
-//            Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
-//
-//            //AGAR OrderTransaction TOPILMASA XATOLIK QAYTARAMIZ
-//            if (transactionId.isEmpty()) {
-//                response.setError(new JSONRPC2Error(
-//                        -31003,
-//                        "Order transaction not found",
-//                        "transaction"));
-//                return;
-//            }
-//
-//            OrderTransaction orderTransaction = transactionId.get();
-//
-//            //OrderTransaction NING STATE IN_PROGRESS(1) BO'LSA
-//            if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
-//
-//                //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
-//                if (System.currentTimeMillis() - orderTransaction.getTransactionCreationTime().getTime() > TIME_EXPIRED_PAYCOM_ORDER) {
-//                    response.setError(new JSONRPC2Error(
-//                            -31008,
-//                            "Unable to complete operation",
-//                            "transaction"));
-//
-//                    //ORDER_TRANSACTION NI O'ZGARTIRIB SAQLAB QO'YAMIZ
-//                    orderTransaction.setReason(4);
-//                    orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
-//                    orderTransactionRepository.save(orderTransaction);
-//                    return;
-//                }
-//
-//                orderTransaction.setState(TransactionState.STATE_DONE.getCode());
-//                orderTransaction.setPerformTime(new Timestamp(System.currentTimeMillis()));
-//                orderTransactionRepository.save(orderTransaction);
-//
-//                //TO'LOV BO'LDI
-//                Payment payment = new Payment(
-//                        orderTransaction.getOrder().getClient(),
-//                        (double) orderTransaction.getOrder().getOrderSum(),
-//                        new Timestamp(System.currentTimeMillis()),
-//                        orderTransaction.getId(),
-//                        orderTransaction.getTransactionId());
-//                paymentRepository.save(payment);
-//
-//                Order order = orderTransaction.getOrder();
-//                order.setPaid(true);
-//                orderRepository.save(order);
-//            }
-//
-//            //OrderTransaction GA TO'LOV QILINIB YAKUNIGA YETGAN BO'LSA
-//            if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
-//                response.setResult(new ResultForm(
-//                        orderTransaction.getPerformTime().getTime(),
-//                        orderTransaction.getState(),
-//                        orderTransaction.getId().toString()));
-//                return;
-//            }
-//
-//            //OrderTransaction NING STATE DONE(2) BO'LMASA XATOLIK BERAMIZ
-//            response.setError(new JSONRPC2Error(
-//                    -31008,
-//                    "Unable to complete operation",
-//                    "transaction"));
-//        }
-//
-//        /**
-//         * TRANSACTION NI BEKOR QILISH UCHUN METHOD
-//         * https://developer.help.paycom.uz/ru/metody-merchant-api/canceltransaction
-//         *
-//         * @param requestForm @RequestBody
-//         * @param response    JSONRPC2Response
-//         */
-//        private void cancelTransaction (PaycomRequestForm requestForm, JSONRPC2Response response){
-//            Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
-//            if (transactionId.isEmpty()) {
-//                response.setError(new JSONRPC2Error(
-//                        -31003,
-//                        "Order transaction not found",
-//                        "transaction"));
-//                return;
-//            }
-//
-//            OrderTransaction orderTransaction = transactionId.get();
-//            if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
-//                orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
-//                orderTransaction.setReason(requestForm.getParams().getReason());
-//                orderTransaction.setCancelTime(new Timestamp(System.currentTimeMillis()));
-//                orderTransactionRepository.save(orderTransaction);
-//                response.setResult(new ResultForm(
-//                        orderTransaction.getCancelTime().getTime(),
-//                        orderTransaction.getState(),
-//                        orderTransaction.getId().toString()));
-//                return;
-//            }
-//
-//            if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
-//                Order order = orderTransaction.getOrder();
-//                if (!order.isDelivered()) {
-//                    Optional<Payment> optionalPayment = paymentRepository.findFirstByOrderTransactionIdOrderByPayDateDesc(orderTransaction.getId());
-//                    if (optionalPayment.isPresent()) {
-//                        Payment payment = optionalPayment.get();
-//                        payment.setCancelled(true);
-//                        paymentRepository.save(payment);
-//                        orderTransaction.setState(TransactionState.STATE_POST_CANCELED.getCode());
-//                        orderTransaction.setReason(requestForm.getParams().getReason());
-//                        orderTransaction.setCancelTime(new Timestamp(System.currentTimeMillis()));
-//                        orderTransactionRepository.save(orderTransaction);
-//                        response.setResult(new ResultForm(
-//                                orderTransaction.getCancelTime().getTime(),
-//                                orderTransaction.getState(),
-//                                orderTransaction.getId().toString()));
-//                    } else {
-//                        response.setError(new JSONRPC2Error(
-//                                -31007,
-//                                "Unable to cancel transaction",
-//                                "transaction"));
-//                        return;
-//                    }
-//                } else {
-//                    {
-//                        response.setError(new JSONRPC2Error(
-//                                -31007,
-//                                "Order already delivered",
-//                                "order"));
-//                        return;
-//                    }
-//                }
-//            }
-//            response.setResult(new ResultForm(
-//                    orderTransaction.getCancelTime().getTime(),
-//                    orderTransaction.getState(),
-//                    orderTransaction.getId().toString()));
-//        }
-//
-//        /**
-//         * TRANSACTION HOLATINI BILISH UCHUN METHOD
-//         * https://developer.help.paycom.uz/ru/metody-merchant-api/checktransaction
-//         *
-//         * @param requestForm @RequestBody
-//         * @param response    JSONRPC2Response
-//         */
-//        private void checkTransaction (PaycomRequestForm requestForm, JSONRPC2Response response){
-//            Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
-//
-//            if (transactionId.isEmpty()) {
-//                response.setError(new JSONRPC2Error(
-//                        -31003,
-//                        "Order transaction not found",
-//                        "transaction"));
-//                return;
-//            }
-//
-//            OrderTransaction orderTransaction = transactionId.get();
-////        log.info(orderTransaction.getReason().toString());
-//            response.setResult(new ResultForm(
-//                    orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
-//                    orderTransaction.getTransactionCreationTime().getTime(),
-//                    orderTransaction.getPerformTime() != null ? orderTransaction.getPerformTime().getTime() : 0,
-//                    orderTransaction.getReason(),
-//                    orderTransaction.getState(),
-//                    orderTransaction.getId().toString()));
-//        }
-//
-//        /**
-//         * PAYCOM TOMONIDAN MUVAFFAQIYATLI BAJRILGAN BARCHA OrderTransaction LARNI QAYTARAMIZ
-//         * https://developer.help.paycom.uz/ru/metody-merchant-api/getstatement
-//         *
-//         * @param requestForm @RequestBody
-//         * @param response    JSONRPC2Response
-//         */
+        //PAYCOM DAN KELGAN ID BO'YICHA TRASACTION OLYAPMIZ
+        Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
+        OrderTransaction orderTransaction;
 
-        private void getStatement (PaycomRequestForm requestForm, JSONRPC2Response response){
+        //AGAR OrderTransaction AVVAL YARATILGAN BO'LSA
+        if (transactionId.isPresent()) {
+            orderTransaction = transactionId.get();
 
-            //DB DAN PAYCOM BERGAN VAQT OALIG'IDA TRANSACTION STATE DONE(2) BO'LGAN OrderTransaction LAR OLINADI
-            List<OrderTransaction> orderTransactionList = orderTransactionRepository.findAllByStateAndTransactionCreationTimeBetween(TransactionState.STATE_DONE.getCode(),
-                    new Timestamp(requestForm.getParams().getFrom()), new Timestamp(requestForm.getParams().getTo()));
-            List<Transaction> transactions = new ArrayList<>();
-
-            //OrderTransaction LARDAN Transaction OBJECTIGA MAP QILINADI
-            for (OrderTransaction orderTransaction : orderTransactionList) {
-                Transaction transaction = new Transaction(
-                        orderTransaction.getTransactionId(),
-                        new Account(orderTransaction.getOrderId()),
-                        orderTransaction.getOrder().getOrderSum(),
-                        0L,
-                        orderTransaction.getTransactionCreationTime().getTime(),
-                        orderTransaction.getPerformTime().getTime(),
-                        null,
-                        orderTransaction.getState(),
-                        orderTransaction.getTransactionCreationTime().getTime(),
-                        orderTransaction.getId().toString());
-                transactions.add(transaction);
+            //OrderTransaction STATE IN PROGRESS DA BO'LMASA XATO QAYTARAMIZ
+            if (!orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
+                response.setError(new JSONRPC2Error(
+                        -31008,
+                        "Unable to complete operation",
+                        "transaction"));
+                return;
             }
-            //PAYCOMGA Transaction LISTI YUBORILADI
-            response.setResult(transactions);
+
+            //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
+            if (System.currentTimeMillis() - orderTransaction.getTransactionCreationTime().getTime() > TIME_EXPIRED_PAYCOM_ORDER) {
+                response.setError(new JSONRPC2Error(
+                        -31008,
+                        "Unable to complete operation",
+                        "transaction"));
+
+                //ORDER_TRANSACTION NI O'ZGARTIRIB SAQLAB QO'YAMIZ
+                orderTransaction.setReason(4);
+                orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
+                orderTransactionRepository.save(orderTransaction);
+                return;
+            }
+            response.setResult(new ResultForm(
+                    orderTransaction.getTransactionCreationTime().getTime(),
+                    orderTransaction.getState(),
+                    orderTransaction.getId().toString()));
+            return;
         }
 
-        /**
-         * PAYCOM DAN KELGAN BASIC AUTHNI TEKSHIRAMIZ
-         *
-         * @param basicAuth String
-         * @param response  JSONRPC2Response
-         * @return boolean
-         */
-        private boolean checkPaycomUserAuth (String basicAuth, JSONRPC2Response response){
+        Optional<OrderTransaction> transactionOrder = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
+        if (transactionOrder.isPresent()) {
+            response.setError(new JSONRPC2Error(
+                    -31099,
+                    "already create",
+                    "transaction"));
+            return;
+        }
 
-            basicAuth = basicAuth.substring("Basic".length()).trim();
-            byte[] decode = Base64.getDecoder().decode(basicAuth);
-            basicAuth = new String(decode, Charset.defaultCharset());
-            String[] split = basicAuth.split(":", 2);
-            Optional<Client> optionalClient = clientRepository.findByPhoneNumber("Paycom");
-            if (optionalClient.isPresent()) {
-                Client client = optionalClient.get();
-                if (passwordEncoder.matches(split[1], client.getPassword())) {
-                    UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(client, null, new ArrayList<>());
-                    SecurityContextHolder.getContext().setAuthentication(authentication);
+        //OrderTransaction YARATILMAGAN BO'LSA
+        else {
+            //ORDER HAMMA JIHATDAN TO'G'RILIGINI TEKSHIRAMIZ
+            boolean checkPerformTransaction = checkPerformTransaction(requestForm, response);
+
+            //AGAR ORDER XATO BO'LSA XATONI YUBORAMIZ
+            if (!checkPerformTransaction) {
+                return;
+            }
+
+            //YANGI OrderTransaction
+            orderTransaction = new OrderTransaction(
+                    requestForm.getParams().getId(),
+                    new Timestamp(requestForm.getParams().getTime()),
+                    TransactionState.STATE_IN_PROGRESS.getCode(),
+                    requestForm.getParams().getAccount().getOrder());
+            orderTransactionRepository.save(orderTransaction);
+        }
+
+        //AVVAL SAQLANGAN MUDDATO O'TMAGAN OrderTransaction YOKI YANGI SAQLANGAN OrderTransaction NING MA'LUMOTLARI QAYTARILYAPTI
+        response.setResult(new ResultForm(
+                orderTransaction.getTransactionCreationTime().getTime(),
+                orderTransaction.getState(),
+                orderTransaction.getId().toString()));
+    }
+
+    /**
+     * TO'LOVNI AMALGA OSHIRADIGAN METHOD
+     * https://developer.help.paycom.uz/ru/metody-merchant-api/performtransaction
+     *
+     * @param requestForm @RequestBody
+     * @param response    JSONRPC2Response
+     */
+    private void performTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+
+        if (requestForm.getParams().getAccount() == null) {
+            response.setError(new JSONRPC2Error(
+                    -31050,
+                    "account field not found",
+                    "transaction"));
+            return;
+        }
+
+        if (requestForm.getParams().getAccount().getOrder() == null) {
+            response.setError(new JSONRPC2Error(
+                    -31050,
+                    "Order field not found",
+                    "transaction"));
+            return;
+        }
+
+        //PAYCOM DAN KELGAN ID BO'YICHA OrderTransaction NI QIDIRAMIZ
+        Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
+
+        //AGAR OrderTransaction TOPILMASA XATOLIK QAYTARAMIZ
+        if (transactionId.isEmpty()) {
+            response.setError(new JSONRPC2Error(
+                    -31003,
+                    "Order transaction not found",
+                    "transaction"));
+            return;
+        }
+        OrderTransaction orderTransaction = transactionId.get();
+
+        //OrderTransaction NING STATE IN_PROGRESS(1) BO'LSA
+        if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
+
+            //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
+            if (System.currentTimeMillis() - orderTransaction.getTransactionCreationTime().getTime() > TIME_EXPIRED_PAYCOM_ORDER) {
+                response.setError(new JSONRPC2Error(
+                        -31008,
+                        "Unable to complete operation",
+                        "transaction"));
+
+                //ORDER_TRANSACTION NI O'ZGARTIRIB SAQLAB QO'YAMIZ
+                orderTransaction.setReason(4);
+                orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
+                orderTransactionRepository.save(orderTransaction);
+                return;
+            }
+
+            Order order = orderRepository.findById(orderTransaction.getOrderId()).get();
+            orderTransaction.setState(TransactionState.STATE_DONE.getCode());
+            orderTransaction.setPerformTime(new Timestamp(System.currentTimeMillis()));
+            orderTransactionRepository.save(orderTransaction);
+
+            //TO'LOV BO'LDI
+            Payment payment = new Payment(
+                    order.getClient(),
+                    (double) order.getOrderSum(),
+                    new Timestamp(System.currentTimeMillis()),
+                    orderTransaction.getId(),
+                    orderTransaction.getTransactionId());
+            paymentRepository.save(payment);
+            order.setPaid(true);
+            orderRepository.save(order);
+        }
+
+        //OrderTransaction GA TO'LOV QILINIB YAKUNIGA YETGAN BO'LSA
+        if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
+            response.setResult(new ResultForm(
+                    orderTransaction.getPerformTime().getTime(),
+                    orderTransaction.getState(),
+                    orderTransaction.getId().toString()));
+            return;
+        }
+
+        //OrderTransaction NING STATE DONE(2) BO'LMASA XATOLIK BERAMIZ
+        response.setError(new JSONRPC2Error(
+                -31008,
+                "Unable to complete operation",
+                "transaction"));
+    }
+
+    /**
+     * TRANSACTION NI BEKOR QILISH UCHUN METHOD
+     * https://developer.help.paycom.uz/ru/metody-merchant-api/canceltransaction
+     *
+     * @param requestForm @RequestBody
+     * @param response    JSONRPC2Response
+     */
+    private void cancelTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+        if (requestForm.getParams().getId() == null) {
+            response.setError(new JSONRPC2Error(
+                    -31050,
+                    "id field is null",
+                    "transaction"));
+            return;
+        }
+
+        Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
+        if (transactionId.isEmpty()) {
+            response.setError(new JSONRPC2Error(
+                    -31003,
+                    "Order transaction not found",
+                    "transaction"));
+            return;
+        }
+
+        OrderTransaction orderTransaction = transactionId.get();
+        if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
+            orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
+            orderTransaction.setReason(requestForm.getParams().getReason());
+            orderTransaction.setCancelTime(new Timestamp(System.currentTimeMillis()));
+            orderTransactionRepository.save(orderTransaction);
+            response.setResult(new ResultForm(
+                    orderTransaction.getCancelTime().getTime(),
+                    orderTransaction.getState(),
+                    orderTransaction.getId().toString()));
+            return;
+        }
+
+        if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
+            Order order = orderTransaction.getOrder();
+            if (!order.isDelivered()) {
+                Optional<Payment> optionalPayment = paymentRepository.findFirstByOrderTransactionIdOrderByPayDateDesc(orderTransaction.getId());
+                if (optionalPayment.isPresent()) {
+                    Payment payment = optionalPayment.get();
+                    payment.setCancelled(true);
+                    paymentRepository.save(payment);
+                    orderTransaction.setState(TransactionState.STATE_POST_CANCELED.getCode());
+                    orderTransaction.setReason(requestForm.getParams().getReason());
+                    orderTransaction.setCancelTime(new Timestamp(System.currentTimeMillis()));
+                    orderTransactionRepository.save(orderTransaction);
+                    response.setResult(new ResultForm(
+                            orderTransaction.getCancelTime().getTime(),
+                            orderTransaction.getState(),
+                            orderTransaction.getId().toString()));
+                } else {
+                    response.setError(new JSONRPC2Error(
+                            -31007,
+                            "Unable to cancel transaction",
+                            "transaction"));
+                    return;
+                }
+            } else {
+                {
+                    response.setError(new JSONRPC2Error(
+                            -31007,
+                            "Order already delivered",
+                            "order"));
+                    return;
                 }
             }
-            response.setError(new JSONRPC2Error(-32504,
-                    "Error authentication",
-                    "auth"));
-            return false;
         }
+        response.setResult(new ResultForm(
+                orderTransaction.getCancelTime().getTime(),
+                orderTransaction.getState(),
+                orderTransaction.getId().toString()));
     }
+
+    /**
+     * TRANSACTION HOLATINI BILISH UCHUN METHOD
+     * https://developer.help.paycom.uz/ru/metody-merchant-api/checktransaction
+     *
+     * @param requestForm @RequestBody
+     * @param response    JSONRPC2Response
+     */
+    private void checkTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+        if (requestForm.getParams().getId() == null) {
+            response.setError(new JSONRPC2Error(
+                    -31050,
+                    "id field is null",
+                    "transaction"));
+            return;
+        }
+        Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
+
+        if (transactionId.isEmpty()) {
+            response.setError(new JSONRPC2Error(
+                    -31003,
+                    "Order transaction not found",
+                    "transaction"));
+            return;
+        }
+
+        OrderTransaction orderTransaction = transactionId.get();
+//        log.info(orderTransaction.getReason().toString());
+        response.setResult(new ResultForm(
+                orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
+                orderTransaction.getTransactionCreationTime().getTime(),
+                orderTransaction.getPerformTime() != null ? orderTransaction.getPerformTime().getTime() : 0,
+                orderTransaction.getReason(),
+                orderTransaction.getState(),
+                orderTransaction.getId().toString()));
+    }
+
+    /**
+     * PAYCOM TOMONIDAN MUVAFFAQIYATLI BAJRILGAN BARCHA OrderTransaction LARNI QAYTARAMIZ
+     * https://developer.help.paycom.uz/ru/metody-merchant-api/getstatement
+     *
+     * @param requestForm @RequestBody
+     * @param response    JSONRPC2Response
+     */
+
+    private void getStatement(PaycomRequestForm requestForm, JSONRPC2Response response) {
+
+        //DB DAN PAYCOM BERGAN VAQT OALIG'IDA TRANSACTION STATE DONE(2) BO'LGAN OrderTransaction LAR OLINADI
+        List<OrderTransaction> orderTransactionList = orderTransactionRepository.findAllByStateAndTransactionCreationTimeBetween(TransactionState.STATE_DONE.getCode(),
+                new Timestamp(requestForm.getParams().getFrom()), new Timestamp(requestForm.getParams().getTo()));
+        List<Transaction> transactions = new ArrayList<>();
+
+        //OrderTransaction LARDAN Transaction OBJECTIGA MAP QILINADI
+        for (OrderTransaction orderTransaction : orderTransactionList) {
+            Transaction transaction = new Transaction(
+                    orderTransaction.getTransactionId(),
+                    new Account(orderTransaction.getOrderId()),
+                    orderTransaction.getOrder().getOrderSum(),
+                    0L,
+                    orderTransaction.getTransactionCreationTime().getTime(),
+                    orderTransaction.getPerformTime().getTime(),
+                    null,
+                    orderTransaction.getState(),
+                    orderTransaction.getTransactionCreationTime().getTime(),
+                    orderTransaction.getId().toString());
+            transactions.add(transaction);
+        }
+        //PAYCOMGA Transaction LISTI YUBORILADI
+        response.setResult(transactions);
+    }
+
+    /**
+     * PAYCOM DAN KELGAN BASIC AUTHNI TEKSHIRAMIZ
+     *
+     * @param basicAuth String
+     * @param response  JSONRPC2Response
+     * @return boolean
+     */
+    private boolean checkPaycomUserAuth(String basicAuth, JSONRPC2Response response) {
+
+        basicAuth = basicAuth.substring("Basic".length()).trim();
+        byte[] decode = Base64.getDecoder().decode(basicAuth);
+        basicAuth = new String(decode, Charset.defaultCharset());
+        String[] split = basicAuth.split(":", 2);
+        Optional<Client> optionalClient = clientRepository.findByPhoneNumber("Paycom");
+        if (optionalClient.isPresent()) {
+            Client client = optionalClient.get();
+            if (passwordEncoder.matches(split[1], client.getPassword())) {
+                UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(client, null, new ArrayList<>());
+                SecurityContextHolder.getContext().setAuthentication(authentication);
+            }
+        }
+        response.setError(new JSONRPC2Error(-32504,
+                "Error authentication",
+                "auth"));
+        return false;
+    }
+}
