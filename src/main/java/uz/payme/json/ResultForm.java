@@ -3,6 +3,7 @@ package uz.payme.json;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
+import uz.payme.entity.OrderTransaction;
 
 @Getter
 @Setter
@@ -11,6 +12,7 @@ import lombok.*;
 //@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResultForm {
 
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private Long id;
 
     @JsonProperty(value = "cancel_time")
@@ -44,4 +46,13 @@ public class ResultForm {
         this.state = state;
         this.transaction = transaction;
     }
+
+    public ResultForm(OrderTransaction orderTransaction){
+        this.createTime = orderTransaction.getTransactionCreationTime().getTime();
+        this.performTime = orderTransaction.getPerformTime().getTime();
+        this.reason = orderTransaction.getReason();
+        this.state = orderTransaction.getState();
+        this.transaction = orderTransaction.getTransactionId();
+    }
+
 }

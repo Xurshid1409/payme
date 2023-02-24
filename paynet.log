@@ -1783,3 +1783,135 @@ org.hibernate.LazyInitializationException: could not initialize proxy [uz.payme.
 2023-02-23 17:27:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-02-23 17:27:58 - HikariPool-1 - Shutdown initiated...
 2023-02-23 17:27:58 - HikariPool-1 - Shutdown completed.
+2023-02-23 17:46:00 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 13916 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 17:46:00 - The following 1 profile is active: "dev"
+2023-02-23 17:46:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 17:46:00 - Finished Spring Data repository scanning in 58 ms. Found 6 JPA repository interfaces.
+2023-02-23 17:46:01 - HikariPool-1 - Starting...
+2023-02-23 17:46:01 - HikariPool-1 - Start completed.
+2023-02-23 17:46:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:46:03 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5345552f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55ba4bff, org.springframework.security.web.context.SecurityContextPersistenceFilter@76bdfc19, org.springframework.security.web.header.HeaderWriterFilter@2eafb4e7, org.springframework.web.filter.CorsFilter@3705a85c, org.springframework.security.web.authentication.logout.LogoutFilter@7524125c, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b0a9f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25890ce3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2284058a, org.springframework.security.web.session.SessionManagementFilter@e76134d, org.springframework.security.web.access.ExceptionTranslationFilter@78f1d29, org.springframework.security.web.access.intercept.AuthorizationFilter@6e0dec27]
+2023-02-23 17:46:04 - Started PaymeApplicationTests in 3.857 seconds (JVM running for 4.596)
+2023-02-23 17:46:04 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:46:04 - HikariPool-1 - Shutdown initiated...
+2023-02-23 17:46:04 - HikariPool-1 - Shutdown completed.
+2023-02-23 17:46:10 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 9576 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 17:46:10 - The following 1 profile is active: "dev"
+2023-02-23 17:46:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 17:46:10 - Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2023-02-23 17:46:11 - HikariPool-1 - Starting...
+2023-02-23 17:46:11 - HikariPool-1 - Start completed.
+2023-02-23 17:46:12 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:46:13 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d15f031, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45dfb6a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@330d16af, org.springframework.security.web.header.HeaderWriterFilter@1aea759d, org.springframework.web.filter.CorsFilter@202ba60a, org.springframework.security.web.authentication.logout.LogoutFilter@2e96489b, uz.payme.security.AuthenticationFilter@1abea1ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35630ee8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@173b24c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12ebcdf6, org.springframework.security.web.session.SessionManagementFilter@5feaafb3, org.springframework.security.web.access.ExceptionTranslationFilter@5ab06829, org.springframework.security.web.access.intercept.AuthorizationFilter@8bb5c2a]
+2023-02-23 17:46:13 - Started PaymeApplicationTests in 3.764 seconds (JVM running for 4.543)
+2023-02-23 17:46:13 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:46:13 - HikariPool-1 - Shutdown initiated...
+2023-02-23 17:46:13 - HikariPool-1 - Shutdown completed.
+2023-02-23 17:48:04 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 13748 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 17:48:04 - The following 1 profile is active: "dev"
+2023-02-23 17:48:05 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 17:48:05 - Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2023-02-23 17:48:05 - HikariPool-1 - Starting...
+2023-02-23 17:48:06 - HikariPool-1 - Start completed.
+2023-02-23 17:48:06 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:48:08 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75693526, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39a1c200, org.springframework.security.web.context.SecurityContextPersistenceFilter@21084a6d, org.springframework.security.web.header.HeaderWriterFilter@2bbaf983, org.springframework.web.filter.CorsFilter@603a34e5, org.springframework.security.web.authentication.logout.LogoutFilter@6ddbbfbb, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2afe825a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dd425dc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@160d68b8, org.springframework.security.web.session.SessionManagementFilter@330d16af, org.springframework.security.web.access.ExceptionTranslationFilter@1aea759d, org.springframework.security.web.access.intercept.AuthorizationFilter@202ba60a]
+2023-02-23 17:48:08 - Started PaymeApplicationTests in 4.058 seconds (JVM running for 4.82)
+2023-02-23 17:48:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:48:08 - HikariPool-1 - Shutdown initiated...
+2023-02-23 17:48:08 - HikariPool-1 - Shutdown completed.
+2023-02-23 17:52:49 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 19188 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 17:52:49 - The following 1 profile is active: "dev"
+2023-02-23 17:52:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 17:52:50 - Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2023-02-23 17:52:51 - HikariPool-1 - Starting...
+2023-02-23 17:52:51 - HikariPool-1 - Start completed.
+2023-02-23 17:52:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:52:53 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5345552f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55ba4bff, org.springframework.security.web.context.SecurityContextPersistenceFilter@76bdfc19, org.springframework.security.web.header.HeaderWriterFilter@2eafb4e7, org.springframework.web.filter.CorsFilter@3705a85c, org.springframework.security.web.authentication.logout.LogoutFilter@7524125c, uz.payme.security.AuthenticationFilter@1a05ff8e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b0a9f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25890ce3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2284058a, org.springframework.security.web.session.SessionManagementFilter@e76134d, org.springframework.security.web.access.ExceptionTranslationFilter@78f1d29, org.springframework.security.web.access.intercept.AuthorizationFilter@6e0dec27]
+2023-02-23 17:52:53 - Started PaymeApplicationTests in 3.899 seconds (JVM running for 4.66)
+2023-02-23 17:52:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:52:53 - HikariPool-1 - Shutdown initiated...
+2023-02-23 17:52:53 - HikariPool-1 - Shutdown completed.
+2023-02-23 17:57:17 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 5012 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 17:57:17 - The following 1 profile is active: "dev"
+2023-02-23 17:57:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 17:57:18 - Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2023-02-23 17:57:19 - HikariPool-1 - Starting...
+2023-02-23 17:57:19 - HikariPool-1 - Start completed.
+2023-02-23 17:57:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:57:20 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d15f031, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45dfb6a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@7524125c, org.springframework.security.web.header.HeaderWriterFilter@6689bf04, org.springframework.web.filter.CorsFilter@202ba60a, org.springframework.security.web.authentication.logout.LogoutFilter@48a38a12, uz.payme.security.AuthenticationFilter@1abea1ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16f15a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35630ee8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12ebcdf6, org.springframework.security.web.session.SessionManagementFilter@357e7113, org.springframework.security.web.access.ExceptionTranslationFilter@549debdb, org.springframework.security.web.access.intercept.AuthorizationFilter@8bb5c2a]
+2023-02-23 17:57:21 - Started PaymeApplicationTests in 3.795 seconds (JVM running for 4.51)
+2023-02-23 17:57:21 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 17:57:21 - HikariPool-1 - Shutdown initiated...
+2023-02-23 17:57:21 - HikariPool-1 - Shutdown completed.
+2023-02-23 18:00:06 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 14452 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 18:00:06 - The following 1 profile is active: "dev"
+2023-02-23 18:00:06 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 18:00:06 - Finished Spring Data repository scanning in 43 ms. Found 6 JPA repository interfaces.
+2023-02-23 18:00:07 - HikariPool-1 - Starting...
+2023-02-23 18:00:07 - HikariPool-1 - Start completed.
+2023-02-23 18:00:07 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:00:09 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5345552f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55ba4bff, org.springframework.security.web.context.SecurityContextPersistenceFilter@76bdfc19, org.springframework.security.web.header.HeaderWriterFilter@2eafb4e7, org.springframework.web.filter.CorsFilter@3705a85c, org.springframework.security.web.authentication.logout.LogoutFilter@7524125c, uz.payme.security.AuthenticationFilter@1abea1ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b0a9f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25890ce3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2284058a, org.springframework.security.web.session.SessionManagementFilter@e76134d, org.springframework.security.web.access.ExceptionTranslationFilter@78f1d29, org.springframework.security.web.access.intercept.AuthorizationFilter@6e0dec27]
+2023-02-23 18:00:09 - Started PaymeApplicationTests in 3.873 seconds (JVM running for 4.604)
+2023-02-23 18:00:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:00:09 - HikariPool-1 - Shutdown initiated...
+2023-02-23 18:00:09 - HikariPool-1 - Shutdown completed.
+2023-02-23 18:07:40 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 5080 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 18:07:40 - The following 1 profile is active: "dev"
+2023-02-23 18:07:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 18:07:41 - Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2023-02-23 18:07:41 - HikariPool-1 - Starting...
+2023-02-23 18:07:41 - HikariPool-1 - Start completed.
+2023-02-23 18:07:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:07:43 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3705a85c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2284058a, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c28009f, org.springframework.security.web.header.HeaderWriterFilter@18d14de3, org.springframework.web.filter.CorsFilter@5b11d0d8, org.springframework.security.web.authentication.logout.LogoutFilter@330d16af, uz.payme.security.AuthenticationFilter@1a1f22f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25890ce3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25da1dc9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cf39df6, org.springframework.security.web.session.SessionManagementFilter@7b38db21, org.springframework.security.web.access.ExceptionTranslationFilter@65294247, org.springframework.security.web.access.intercept.AuthorizationFilter@237824b0]
+2023-02-23 18:07:44 - Started PaymeApplicationTests in 3.867 seconds (JVM running for 4.59)
+2023-02-23 18:07:44 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:07:44 - HikariPool-1 - Shutdown initiated...
+2023-02-23 18:07:44 - HikariPool-1 - Shutdown completed.
+2023-02-23 18:10:54 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 8620 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 18:10:54 - The following 1 profile is active: "dev"
+2023-02-23 18:10:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 18:10:54 - Finished Spring Data repository scanning in 54 ms. Found 6 JPA repository interfaces.
+2023-02-23 18:10:55 - HikariPool-1 - Starting...
+2023-02-23 18:10:55 - HikariPool-1 - Start completed.
+2023-02-23 18:10:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:10:57 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46ae897c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44846c76, org.springframework.security.web.context.SecurityContextPersistenceFilter@39b9dc35, org.springframework.security.web.header.HeaderWriterFilter@1dc2c13c, org.springframework.web.filter.CorsFilter@1146e32e, org.springframework.security.web.authentication.logout.LogoutFilter@6e80de85, uz.payme.security.AuthenticationFilter@61f08aa9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e149395, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cfac0bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@511ad0dd, org.springframework.security.web.session.SessionManagementFilter@76bdfc19, org.springframework.security.web.access.ExceptionTranslationFilter@2eafb4e7, org.springframework.security.web.access.intercept.AuthorizationFilter@3705a85c]
+2023-02-23 18:10:57 - Started PaymeApplicationTests in 3.855 seconds (JVM running for 4.58)
+2023-02-23 18:10:58 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:10:58 - HikariPool-1 - Shutdown initiated...
+2023-02-23 18:10:58 - HikariPool-1 - Shutdown completed.
+2023-02-23 18:14:14 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 11280 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 18:14:14 - The following 1 profile is active: "dev"
+2023-02-23 18:14:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 18:14:14 - Finished Spring Data repository scanning in 47 ms. Found 6 JPA repository interfaces.
+2023-02-23 18:14:15 - HikariPool-1 - Starting...
+2023-02-23 18:14:15 - HikariPool-1 - Start completed.
+2023-02-23 18:14:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:14:17 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@237824b0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52a8f789, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a26eee6, org.springframework.security.web.header.HeaderWriterFilter@35e3f3b8, org.springframework.web.filter.CorsFilter@5345552f, org.springframework.security.web.authentication.logout.LogoutFilter@669469c9, uz.payme.security.AuthenticationFilter@1a05ff8e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1248f83, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19b0a9f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55ba4bff, org.springframework.security.web.session.SessionManagementFilter@2dbf8cfc, org.springframework.security.web.access.ExceptionTranslationFilter@3c65f2e1, org.springframework.security.web.access.intercept.AuthorizationFilter@12e13abd]
+2023-02-23 18:14:17 - Started PaymeApplicationTests in 3.799 seconds (JVM running for 4.55)
+2023-02-23 18:14:17 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:14:17 - HikariPool-1 - Shutdown initiated...
+2023-02-23 18:14:17 - HikariPool-1 - Shutdown completed.
+2023-02-23 18:24:52 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 10604 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 18:24:52 - The following 1 profile is active: "dev"
+2023-02-23 18:24:52 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 18:24:52 - Finished Spring Data repository scanning in 40 ms. Found 6 JPA repository interfaces.
+2023-02-23 18:24:53 - HikariPool-1 - Starting...
+2023-02-23 18:24:53 - HikariPool-1 - Start completed.
+2023-02-23 18:24:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:24:55 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46ae897c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44846c76, org.springframework.security.web.context.SecurityContextPersistenceFilter@39b9dc35, org.springframework.security.web.header.HeaderWriterFilter@1dc2c13c, org.springframework.web.filter.CorsFilter@1146e32e, org.springframework.security.web.authentication.logout.LogoutFilter@6e80de85, uz.payme.security.AuthenticationFilter@5a9ef32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6e149395, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cfac0bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@511ad0dd, org.springframework.security.web.session.SessionManagementFilter@76bdfc19, org.springframework.security.web.access.ExceptionTranslationFilter@2eafb4e7, org.springframework.security.web.access.intercept.AuthorizationFilter@3705a85c]
+2023-02-23 18:24:55 - Started PaymeApplicationTests in 3.804 seconds (JVM running for 4.549)
+2023-02-23 18:24:55 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:24:55 - HikariPool-1 - Shutdown initiated...
+2023-02-23 18:24:55 - HikariPool-1 - Shutdown completed.
+2023-02-23 18:26:49 - Starting PaymeApplicationTests using Java 17.0.5 on java_dev with PID 3300 (started by xurshid_1989 in D:\projects\payme)
+2023-02-23 18:26:49 - The following 1 profile is active: "dev"
+2023-02-23 18:26:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-23 18:26:49 - Finished Spring Data repository scanning in 50 ms. Found 6 JPA repository interfaces.
+2023-02-23 18:26:50 - HikariPool-1 - Starting...
+2023-02-23 18:26:50 - HikariPool-1 - Start completed.
+2023-02-23 18:26:51 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:26:52 - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5345552f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55ba4bff, org.springframework.security.web.context.SecurityContextPersistenceFilter@76bdfc19, org.springframework.security.web.header.HeaderWriterFilter@2eafb4e7, org.springframework.web.filter.CorsFilter@3705a85c, org.springframework.security.web.authentication.logout.LogoutFilter@7524125c, uz.payme.security.AuthenticationFilter@1abea1ed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19b0a9f2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25890ce3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2284058a, org.springframework.security.web.session.SessionManagementFilter@e76134d, org.springframework.security.web.access.ExceptionTranslationFilter@78f1d29, org.springframework.security.web.access.intercept.AuthorizationFilter@6e0dec27]
+2023-02-23 18:26:53 - Started PaymeApplicationTests in 3.963 seconds (JVM running for 4.706)
+2023-02-23 18:26:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-23 18:26:53 - HikariPool-1 - Shutdown initiated...
+2023-02-23 18:26:53 - HikariPool-1 - Shutdown completed.
