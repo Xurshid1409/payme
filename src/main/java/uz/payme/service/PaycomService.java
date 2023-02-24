@@ -246,34 +246,19 @@ public class PaycomService implements IPaycomService {
      */
     private void performTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
 
-        if (requestForm.getParams().getAccount() == null) {
-            response.setError(new JSONRPC2Error(
-                    -31050,
-                    "account field not found",
-                    "transaction"));
-            return;
-        }
-
-        if (requestForm.getParams().getAccount().getOrder() == null) {
-            response.setError(new JSONRPC2Error(
-                    -31050,
-                    "Order field not found",
-                    "transaction"));
-            return;
-        }
-
         //PAYCOM DAN KELGAN ID BO'YICHA OrderTransaction NI QIDIRAMIZ
-        Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
+        Optional<OrderTransaction> optionalOrderTransaction = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
 
         //AGAR OrderTransaction TOPILMASA XATOLIK QAYTARAMIZ
-        if (transactionId.isEmpty()) {
+        if (optionalOrderTransaction.isEmpty()) {
             response.setError(new JSONRPC2Error(
                     -31003,
                     "Order transaction not found",
                     "transaction"));
             return;
         }
-        OrderTransaction orderTransaction = transactionId.get();
+
+        OrderTransaction orderTransaction = optionalOrderTransaction.get();
 
         //OrderTransaction NING STATE IN_PROGRESS(1) BO'LSA
         if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
@@ -292,29 +277,31 @@ public class PaycomService implements IPaycomService {
                 return;
             }
 
-            Order order = orderRepository.findById(orderTransaction.getOrderId()).get();
             orderTransaction.setState(TransactionState.STATE_DONE.getCode());
             orderTransaction.setPerformTime(new Timestamp(System.currentTimeMillis()));
-            orderTransactionRepository.save(orderTransaction);
+            OrderTransaction save = orderTransactionRepository.save(orderTransaction);
 
             //TO'LOV BO'LDI
+            Order order = orderRepository.findById(orderTransaction.getOrderId()).get();
+            Client client = clientRepository.findById(order.getClient().getId()).get();
             Payment payment = new Payment(
-                    order.getClient(),
+                    client,
                     (double) order.getOrderSum(),
                     new Timestamp(System.currentTimeMillis()),
                     orderTransaction.getId(),
                     orderTransaction.getTransactionId());
             paymentRepository.save(payment);
+
             order.setPaid(true);
             orderRepository.save(order);
+
+            response.setResult(new ResultForm(save));
+            return;
         }
 
         //OrderTransaction GA TO'LOV QILINIB YAKUNIGA YETGAN BO'LSA
         if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
-            response.setResult(new ResultForm(
-                    orderTransaction.getPerformTime().getTime(),
-                    orderTransaction.getState(),
-                    orderTransaction.getId().toString()));
+            response.setResult(new ResultForm(orderTransaction));
             return;
         }
 
@@ -324,6 +311,7 @@ public class PaycomService implements IPaycomService {
                 "Unable to complete operation",
                 "transaction"));
     }
+
 
     /**
      * TRANSACTION NI BEKOR QILISH UCHUN METHOD
