@@ -19,7 +19,6 @@ import uz.payme.repository.ClientRepository;
 import uz.payme.repository.OrderRepository;
 import uz.payme.repository.OrderTransactionRepository;
 import uz.payme.repository.PaymentRepository;
-
 import java.nio.charset.Charset;
 import java.sql.Timestamp;
 import java.util.*;
@@ -39,36 +38,21 @@ public class PaycomService implements IPaycomService {
     public JSONObject payWithPaycom(PaycomRequestForm requestForm, String authorization) {
 
         Params params = requestForm.getParams();
-        log.info(requestForm.getMethod(), requestForm.getParams().getId(), requestForm.getId(), authorization);
         JSONRPC2Response response = new JSONRPC2Response(params.getId());
 
-        //BASIC AUTH BO'SH BO'LSA YOKI XATO KELGAN BO'LSA ERROR RESPONSE BERAMIZ
         if (authorization == null || checkPaycomUserAuth(authorization, response)) {
             return response.toJSONObject();
         }
 
         //PAYCOM QAYSI METHODDA KELAYOTGANLIGIGA QARAB ISH BAJARAMIZ
         switch (requestForm.getMethod()) {
-            case "CheckPerformTransaction":
-                checkPerformTransaction(requestForm, response);
-                break;
-            case "CreateTransaction":
-                createTransaction(requestForm, response);
-                break;
-            case "PerformTransaction":
-                performTransaction(requestForm, response);
-                break;
-            case "CancelTransaction":
-                cancelTransaction(requestForm, response);
-                break;
-            case "CheckTransaction":
-                checkTransaction(requestForm, response);
-                break;
-            case "GetStatement":
-                getStatement(requestForm, response);
-                break;
+            case "CheckPerformTransaction" -> checkPerformTransaction(requestForm, response, authorization);
+            case "CreateTransaction" -> createTransaction(requestForm, response, authorization);
+            case "PerformTransaction" -> performTransaction(requestForm, response, authorization);
+            case "CancelTransaction" -> cancelTransaction(requestForm, response, authorization);
+            case "CheckTransaction" -> checkTransaction(requestForm, response, authorization);
+            case "GetStatement" -> getStatement(requestForm, response, authorization);
         }
-        log.info(response.toJSONString());
         return response.toJSONObject();
     }
 
@@ -80,7 +64,17 @@ public class PaycomService implements IPaycomService {
      * @param response    JSONRPC2Response
      * @return boolena
      */
-    public boolean checkPerformTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+    public boolean checkPerformTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
+
+        if (requestForm.getParams().getAccount() == null) {
+            response.setError(new JSONRPC2Error(-32504,
+                    "Error authentication",
+                    "auth"));
+        }
+
+        if (!checkPaycomUserAuth(authorization, response)) {
+            return false;
+        }
 
         //PAYCOMDAN ACOUNT FIELDI KELMASA
         if (requestForm.getParams().getAccount() == null) {
@@ -163,7 +157,7 @@ public class PaycomService implements IPaycomService {
      * @param requestForm @RequestBody
      * @param response    JSONRPC2Response
      */
-    private void createTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+    private void createTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
 
         //PAYCOM DAN KELGAN ID BO'YICHA TRASACTION OLYAPMIZ
         Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
@@ -172,7 +166,6 @@ public class PaycomService implements IPaycomService {
         //AGAR OrderTransaction AVVAL YARATILGAN BO'LSA
         if (transactionId.isPresent()) {
             orderTransaction = transactionId.get();
-
             //OrderTransaction STATE IN PROGRESS DA BO'LMASA XATO QAYTARAMIZ
             if (!orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
                 response.setError(new JSONRPC2Error(
@@ -181,7 +174,6 @@ public class PaycomService implements IPaycomService {
                         "transaction"));
                 return;
             }
-
             //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
             if (System.currentTimeMillis() - orderTransaction.getTransactionCreationTime().getTime() > TIME_EXPIRED_PAYCOM_ORDER) {
                 response.setError(new JSONRPC2Error(
@@ -202,19 +194,23 @@ public class PaycomService implements IPaycomService {
             return;
         }
 
-        Optional<OrderTransaction> transactionOrder = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
-        if (transactionOrder.isPresent()) {
-            response.setError(new JSONRPC2Error(
-                    -31099,
-                    "already create",
-                    "transaction"));
-            return;
-        }
+//        Optional<OrderTransaction> transactionOrder = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
+//        if (transactionOrder.isPresent()) {
+//            response.setError(new JSONRPC2Error(
+//                    -31099,
+//                    "already create",
+//                    "transaction"));
+//            return;
+//        }
 
         //OrderTransaction YARATILMAGAN BO'LSA
         else {
             //ORDER HAMMA JIHATDAN TO'G'RILIGINI TEKSHIRAMIZ
-            boolean checkPerformTransaction = checkPerformTransaction(requestForm, response);
+            boolean checkPerformTransaction = checkPerformTransaction(requestForm, response, authorization);
+
+//            if (!checkPaycomUserAuth(authorization, response)) {
+//                return;
+//            }
 
             //AGAR ORDER XATO BO'LSA XATONI YUBORAMIZ
             if (!checkPerformTransaction) {
@@ -244,12 +240,23 @@ public class PaycomService implements IPaycomService {
      * @param requestForm @RequestBody
      * @param response    JSONRPC2Response
      */
-    private void performTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+
+    private void performTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
+
+        if (authorization == null || !checkPaycomUserAuth(authorization, response)) {
+            return;
+        }
+
+        if (requestForm.getParams().getAccount() == null) {
+            response.setError(new JSONRPC2Error(
+                    -32504,
+                    "Error authentication",
+                    "Error authentication"));
+        }
 
         //PAYCOM DAN KELGAN ID BO'YICHA OrderTransaction NI QIDIRAMIZ
         Optional<OrderTransaction> optionalOrderTransaction = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
 
-        //AGAR OrderTransaction TOPILMASA XATOLIK QAYTARAMIZ
         if (optionalOrderTransaction.isEmpty()) {
             response.setError(new JSONRPC2Error(
                     -31003,
@@ -262,7 +269,6 @@ public class PaycomService implements IPaycomService {
 
         //OrderTransaction NING STATE IN_PROGRESS(1) BO'LSA
         if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
-
             //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
             if (System.currentTimeMillis() - orderTransaction.getTransactionCreationTime().getTime() > TIME_EXPIRED_PAYCOM_ORDER) {
                 response.setError(new JSONRPC2Error(
@@ -299,6 +305,7 @@ public class PaycomService implements IPaycomService {
             return;
         }
 
+
         //OrderTransaction GA TO'LOV QILINIB YAKUNIGA YETGAN BO'LSA
         if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
             response.setResult(new ResultForm(orderTransaction));
@@ -312,7 +319,6 @@ public class PaycomService implements IPaycomService {
                 "transaction"));
     }
 
-
     /**
      * TRANSACTION NI BEKOR QILISH UCHUN METHOD
      * https://developer.help.paycom.uz/ru/metody-merchant-api/canceltransaction
@@ -320,7 +326,12 @@ public class PaycomService implements IPaycomService {
      * @param requestForm @RequestBody
      * @param response    JSONRPC2Response
      */
-    private void cancelTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+    private void cancelTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
+
+        if (!checkPaycomUserAuth(authorization, response)) {
+            return;
+        }
+
         if (requestForm.getParams().getId() == null) {
             response.setError(new JSONRPC2Error(
                     -31050,
@@ -397,7 +408,12 @@ public class PaycomService implements IPaycomService {
      * @param requestForm @RequestBody
      * @param response    JSONRPC2Response
      */
-    private void checkTransaction(PaycomRequestForm requestForm, JSONRPC2Response response) {
+    private void checkTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
+
+        if (!checkPaycomUserAuth(authorization, response)) {
+            return;
+        }
+
         if (requestForm.getParams().getId() == null) {
             response.setError(new JSONRPC2Error(
                     -31050,
@@ -416,7 +432,6 @@ public class PaycomService implements IPaycomService {
         }
 
         OrderTransaction orderTransaction = transactionId.get();
-//        log.info(orderTransaction.getReason().toString());
         response.setResult(new ResultForm(
                 orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
                 orderTransaction.getTransactionCreationTime().getTime(),
@@ -434,7 +449,11 @@ public class PaycomService implements IPaycomService {
      * @param response    JSONRPC2Response
      */
 
-    private void getStatement(PaycomRequestForm requestForm, JSONRPC2Response response) {
+    private void getStatement(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
+
+        if (!checkPaycomUserAuth(authorization, response)) {
+            return;
+        }
 
         //DB DAN PAYCOM BERGAN VAQT OALIG'IDA TRANSACTION STATE DONE(2) BO'LGAN OrderTransaction LAR OLINADI
         List<OrderTransaction> orderTransactionList = orderTransactionRepository.findAllByStateAndTransactionCreationTimeBetween(TransactionState.STATE_DONE.getCode(),

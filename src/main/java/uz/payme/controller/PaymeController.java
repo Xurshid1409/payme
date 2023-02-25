@@ -16,7 +16,7 @@ public class PaymeController {
 
     @PostMapping
     ResponseEntity<JSONObject> post(@RequestBody PaycomRequestForm requestForm,
-                                   @RequestHeader("Authorization") String authorization) {
+                                    @RequestHeader(defaultValue = "Authorization") String authorization) {
         return ResponseEntity.ok(ipaycomService.payWithPaycom(requestForm, authorization));
     }
 }
