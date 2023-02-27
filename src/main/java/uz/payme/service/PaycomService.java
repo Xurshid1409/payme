@@ -66,15 +66,9 @@ public class PaycomService implements IPaycomService {
      */
     public boolean checkPerformTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
 
-        if (requestForm.getParams().getAccount() == null) {
-            response.setError(new JSONRPC2Error(-32504,
-                    "Error authentication",
-                    "auth"));
-        }
-
-        if (!checkPaycomUserAuth(authorization, response)) {
-            return false;
-        }
+//        if (!checkPaycomUserAuth(authorization, response)) {
+//            return false;
+//        }
 
         //PAYCOMDAN ACOUNT FIELDI KELMASA
         if (requestForm.getParams().getAccount() == null) {
@@ -144,6 +138,7 @@ public class PaycomService implements IPaycomService {
                     "order"));
             return false;
         }
+
         response.setResult(new CheckPerformTransactionAllowResponse(
                 new AdditionalInfo(order.getId(), order.getOrderSum()),
                 true));
@@ -194,14 +189,14 @@ public class PaycomService implements IPaycomService {
             return;
         }
 
-//        Optional<OrderTransaction> transactionOrder = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
-//        if (transactionOrder.isPresent()) {
-//            response.setError(new JSONRPC2Error(
-//                    -31099,
-//                    "already create",
-//                    "transaction"));
-//            return;
-//        }
+    //        Optional<OrderTransaction> transactionOrder = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
+    //        if (transactionOrder.isPresent()) {
+    //            response.setError(new JSONRPC2Error(
+    //                    -31099,
+    //                    "already create",
+    //                    "transaction"));
+    //            return;
+    //        }
 
         //OrderTransaction YARATILMAGAN BO'LSA
         else {
@@ -226,7 +221,7 @@ public class PaycomService implements IPaycomService {
             orderTransactionRepository.save(orderTransaction);
         }
 
-        //AVVAL SAQLANGAN MUDDATO O'TMAGAN OrderTransaction YOKI YANGI SAQLANGAN OrderTransaction NING MA'LUMOTLARI QAYTARILYAPTI
+        //AVVAL SAQLANGAN MUDDATI O'TMAGAN OrderTransaction YOKI YANGI SAQLANGAN OrderTransaction NING MA'LUMOTLARI QAYTARILYAPTI
         response.setResult(new ResultForm(
                 orderTransaction.getTransactionCreationTime().getTime(),
                 orderTransaction.getState(),
@@ -243,9 +238,9 @@ public class PaycomService implements IPaycomService {
 
     private void performTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
 
-        if (authorization == null || !checkPaycomUserAuth(authorization, response)) {
-            return;
-        }
+//        if (authorization == null || !checkPaycomUserAuth(authorization, response)) {
+//            return;
+//        }
 
         if (requestForm.getParams().getAccount() == null) {
             response.setError(new JSONRPC2Error(
@@ -328,9 +323,9 @@ public class PaycomService implements IPaycomService {
      */
     private void cancelTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
 
-        if (!checkPaycomUserAuth(authorization, response)) {
-            return;
-        }
+//        if (!checkPaycomUserAuth(authorization, response)) {
+//            return;
+//        }
 
         if (requestForm.getParams().getId() == null) {
             response.setError(new JSONRPC2Error(
@@ -363,7 +358,8 @@ public class PaycomService implements IPaycomService {
         }
 
         if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
-            Order order = orderTransaction.getOrder();
+            Order order = orderRepository.findById(orderTransaction.getOrderId()).get();
+//            Order order = orderTransaction.getOrder();
             if (!order.isDelivered()) {
                 Optional<Payment> optionalPayment = paymentRepository.findFirstByOrderTransactionIdOrderByPayDateDesc(orderTransaction.getId());
                 if (optionalPayment.isPresent()) {
@@ -410,9 +406,9 @@ public class PaycomService implements IPaycomService {
      */
     private void checkTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
 
-        if (!checkPaycomUserAuth(authorization, response)) {
-            return;
-        }
+//        if (!checkPaycomUserAuth(authorization, response)) {
+//            return;
+//        }
 
         if (requestForm.getParams().getId() == null) {
             response.setError(new JSONRPC2Error(
@@ -451,9 +447,9 @@ public class PaycomService implements IPaycomService {
 
     private void getStatement(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
 
-        if (!checkPaycomUserAuth(authorization, response)) {
-            return;
-        }
+//        if (!checkPaycomUserAuth(authorization, response)) {
+//            return;
+//        }
 
         //DB DAN PAYCOM BERGAN VAQT OALIG'IDA TRANSACTION STATE DONE(2) BO'LGAN OrderTransaction LAR OLINADI
         List<OrderTransaction> orderTransactionList = orderTransactionRepository.findAllByStateAndTransactionCreationTimeBetween(TransactionState.STATE_DONE.getCode(),
