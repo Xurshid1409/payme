@@ -211,7 +211,6 @@ public class PaycomService implements IPaycomService {
             if (!checkPerformTransaction) {
                 return;
             }
-
             //YANGI OrderTransaction
             orderTransaction = new OrderTransaction(
                     requestForm.getParams().getId(),
@@ -242,16 +241,8 @@ public class PaycomService implements IPaycomService {
 //            return;
 //        }
 
-        if (requestForm.getParams().getAccount() == null) {
-            response.setError(new JSONRPC2Error(
-                    -32504,
-                    "Error authentication",
-                    "Error authentication"));
-        }
-
         //PAYCOM DAN KELGAN ID BO'YICHA OrderTransaction NI QIDIRAMIZ
         Optional<OrderTransaction> optionalOrderTransaction = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
-
         if (optionalOrderTransaction.isEmpty()) {
             response.setError(new JSONRPC2Error(
                     -31003,
@@ -261,7 +252,6 @@ public class PaycomService implements IPaycomService {
         }
 
         OrderTransaction orderTransaction = optionalOrderTransaction.get();
-
         //OrderTransaction NING STATE IN_PROGRESS(1) BO'LSA
         if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
             //OrderTransaction YARATILGAN VAQTI 12 SOATDAN  KO'P BO'LSA XATO QAYTARAMIZ. MUDDATI O'TGAN ORDER
@@ -277,11 +267,9 @@ public class PaycomService implements IPaycomService {
                 orderTransactionRepository.save(orderTransaction);
                 return;
             }
-
             orderTransaction.setState(TransactionState.STATE_DONE.getCode());
             orderTransaction.setPerformTime(new Timestamp(System.currentTimeMillis()));
             OrderTransaction save = orderTransactionRepository.save(orderTransaction);
-
             //TO'LOV BO'LDI
             Order order = orderRepository.findById(orderTransaction.getOrderId()).get();
             Client client = clientRepository.findById(order.getClient().getId()).get();
@@ -292,14 +280,11 @@ public class PaycomService implements IPaycomService {
                     orderTransaction.getId(),
                     orderTransaction.getTransactionId());
             paymentRepository.save(payment);
-
             order.setPaid(true);
             orderRepository.save(order);
-
             response.setResult(new ResultForm(save));
             return;
         }
-
 
         //OrderTransaction GA TO'LOV QILINIB YAKUNIGA YETGAN BO'LSA
         if (orderTransaction.getState().equals(TransactionState.STATE_DONE.getCode())) {
@@ -327,14 +312,6 @@ public class PaycomService implements IPaycomService {
 //            return;
 //        }
 
-        if (requestForm.getParams().getId() == null) {
-            response.setError(new JSONRPC2Error(
-                    -31050,
-                    "id field is null",
-                    "transaction"));
-            return;
-        }
-
         Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
         if (transactionId.isEmpty()) {
             response.setError(new JSONRPC2Error(
@@ -343,17 +320,19 @@ public class PaycomService implements IPaycomService {
                     "transaction"));
             return;
         }
-
         OrderTransaction orderTransaction = transactionId.get();
         if (orderTransaction.getState().equals(TransactionState.STATE_IN_PROGRESS.getCode())) {
             orderTransaction.setState(TransactionState.STATE_CANCELED.getCode());
             orderTransaction.setReason(requestForm.getParams().getReason());
             orderTransaction.setCancelTime(new Timestamp(System.currentTimeMillis()));
-            orderTransactionRepository.save(orderTransaction);
+            OrderTransaction orderTransactionSave = orderTransactionRepository.save(orderTransaction);
             response.setResult(new ResultForm(
-                    orderTransaction.getCancelTime().getTime(),
-                    orderTransaction.getState(),
-                    orderTransaction.getId().toString()));
+                    orderTransactionSave.getTransactionCreationTime().getTime(),
+                    orderTransactionSave.getPerformTime() != null ? orderTransaction.getPerformTime().getTime() : 0,
+                    orderTransactionSave.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
+                    orderTransactionSave.getReason(),
+                    orderTransactionSave.getState(),
+                    orderTransactionSave.getId().toString()));
             return;
         }
 
@@ -371,9 +350,13 @@ public class PaycomService implements IPaycomService {
                     orderTransaction.setCancelTime(new Timestamp(System.currentTimeMillis()));
                     orderTransactionRepository.save(orderTransaction);
                     response.setResult(new ResultForm(
-                            orderTransaction.getCancelTime().getTime(),
+                            orderTransaction.getTransactionCreationTime().getTime(),
+                            orderTransaction.getPerformTime() != null ? orderTransaction.getPerformTime().getTime() : 0,
+                            orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
+                            orderTransaction.getReason(),
                             orderTransaction.getState(),
                             orderTransaction.getId().toString()));
+                    return;
                 } else {
                     response.setError(new JSONRPC2Error(
                             -31007,
@@ -382,21 +365,21 @@ public class PaycomService implements IPaycomService {
                     return;
                 }
             } else {
-                {
                     response.setError(new JSONRPC2Error(
                             -31007,
                             "Order already delivered",
                             "order"));
                     return;
-                }
             }
         }
         response.setResult(new ResultForm(
-                orderTransaction.getCancelTime().getTime(),
+                orderTransaction.getTransactionCreationTime().getTime(),
+                orderTransaction.getPerformTime() != null ? orderTransaction.getPerformTime().getTime() : 0,
+                orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
+                orderTransaction.getReason(),
                 orderTransaction.getState(),
                 orderTransaction.getId().toString()));
     }
-
     /**
      * TRANSACTION HOLATINI BILISH UCHUN METHOD
      * https://developer.help.paycom.uz/ru/metody-merchant-api/checktransaction
@@ -410,15 +393,7 @@ public class PaycomService implements IPaycomService {
 //            return;
 //        }
 
-        if (requestForm.getParams().getId() == null) {
-            response.setError(new JSONRPC2Error(
-                    -31050,
-                    "id field is null",
-                    "transaction"));
-            return;
-        }
         Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
-
         if (transactionId.isEmpty()) {
             response.setError(new JSONRPC2Error(
                     -31003,
@@ -426,12 +401,11 @@ public class PaycomService implements IPaycomService {
                     "transaction"));
             return;
         }
-
         OrderTransaction orderTransaction = transactionId.get();
         response.setResult(new ResultForm(
-                orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
                 orderTransaction.getTransactionCreationTime().getTime(),
                 orderTransaction.getPerformTime() != null ? orderTransaction.getPerformTime().getTime() : 0,
+                orderTransaction.getCancelTime() != null ? orderTransaction.getCancelTime().getTime() : 0,
                 orderTransaction.getReason(),
                 orderTransaction.getState(),
                 orderTransaction.getId().toString()));
