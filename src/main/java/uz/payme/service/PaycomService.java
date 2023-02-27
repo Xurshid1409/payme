@@ -19,6 +19,7 @@ import uz.payme.repository.ClientRepository;
 import uz.payme.repository.OrderRepository;
 import uz.payme.repository.OrderTransactionRepository;
 import uz.payme.repository.PaymentRepository;
+
 import java.nio.charset.Charset;
 import java.sql.Timestamp;
 import java.util.*;
@@ -129,6 +130,7 @@ public class PaycomService implements IPaycomService {
                     "order"));
             return false;
         }
+
         //ORDER ALLAQACHON YAKUNLANAGAN BO'LSA
         if (order.isPaid()) {
             response.setError(new JSONRPC2Error(
@@ -137,6 +139,7 @@ public class PaycomService implements IPaycomService {
                     "order"));
             return false;
         }
+
         response.setResult(new CheckPerformTransactionAllowResponse(
                 new AdditionalInfo(order.getId(), order.getOrderSum()),
                 true));
@@ -151,6 +154,18 @@ public class PaycomService implements IPaycomService {
      * @param response    JSONRPC2Response
      */
     private void createTransaction(PaycomRequestForm requestForm, JSONRPC2Response response, String authorization) {
+
+        Optional<OrderTransaction> transactionOptional = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
+        if (transactionOptional.isPresent()) {
+            OrderTransaction orderTransaction = transactionOptional.get();
+            if (!Objects.equals(orderTransaction.getTransactionId(), requestForm.getParams().getId())) {
+                response.setError(new JSONRPC2Error(
+                        -31050,
+                        "Unable to complete operation",
+                        "transaction"));
+                return;
+            }
+        }
 
         //PAYCOM DAN KELGAN ID BO'YICHA TRASACTION OLYAPMIZ
         Optional<OrderTransaction> transactionId = orderTransactionRepository.findByTransactionId(requestForm.getParams().getId());
@@ -185,6 +200,7 @@ public class PaycomService implements IPaycomService {
                     orderTransaction.getState(),
                     orderTransaction.getId().toString()));
         }
+
         //OrderTransaction YARATILMAGAN BO'LSA
         else {
             //ORDER HAMMA JIHATDAN TO'G'RILIGINI TEKSHIRAMIZ
@@ -206,13 +222,14 @@ public class PaycomService implements IPaycomService {
                     requestForm.getParams().getAccount().getOrder());
             orderTransactionRepository.save(orderTransaction);
 
-
         }
+
         //AVVAL SAQLANGAN MUDDATI O'TMAGAN OrderTransaction YOKI YANGI SAQLANGAN OrderTransaction NING MA'LUMOTLARI QAYTARILYAPTI
         response.setResult(new ResultForm(
                 orderTransaction.getTransactionCreationTime().getTime(),
                 orderTransaction.getState(),
                 orderTransaction.getId().toString()));
+
     }
 
     /**
@@ -353,11 +370,11 @@ public class PaycomService implements IPaycomService {
                     return;
                 }
             } else {
-                    response.setError(new JSONRPC2Error(
-                            -31007,
-                            "Order already delivered",
-                            "order"));
-                    return;
+                response.setError(new JSONRPC2Error(
+                        -31007,
+                        "Order already delivered",
+                        "order"));
+                return;
             }
         }
         response.setResult(new ResultForm(
@@ -368,6 +385,7 @@ public class PaycomService implements IPaycomService {
                 orderTransaction.getState(),
                 orderTransaction.getId().toString()));
     }
+
     /**
      * TRANSACTION HOLATINI BILISH UCHUN METHOD
      * https://developer.help.paycom.uz/ru/metody-merchant-api/checktransaction
