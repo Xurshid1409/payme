@@ -129,7 +129,6 @@ public class PaycomService implements IPaycomService {
                     "order"));
             return false;
         }
-
         //ORDER ALLAQACHON YAKUNLANAGAN BO'LSA
         if (order.isPaid()) {
             response.setError(new JSONRPC2Error(
@@ -138,7 +137,6 @@ public class PaycomService implements IPaycomService {
                     "order"));
             return false;
         }
-
         response.setResult(new CheckPerformTransactionAllowResponse(
                 new AdditionalInfo(order.getId(), order.getOrderSum()),
                 true));
@@ -186,18 +184,7 @@ public class PaycomService implements IPaycomService {
                     orderTransaction.getTransactionCreationTime().getTime(),
                     orderTransaction.getState(),
                     orderTransaction.getId().toString()));
-            return;
         }
-
-    //        Optional<OrderTransaction> transactionOrder = orderTransactionRepository.findByOrderId(requestForm.getParams().getAccount().getOrder());
-    //        if (transactionOrder.isPresent()) {
-    //            response.setError(new JSONRPC2Error(
-    //                    -31099,
-    //                    "already create",
-    //                    "transaction"));
-    //            return;
-    //        }
-
         //OrderTransaction YARATILMAGAN BO'LSA
         else {
             //ORDER HAMMA JIHATDAN TO'G'RILIGINI TEKSHIRAMIZ
@@ -218,8 +205,9 @@ public class PaycomService implements IPaycomService {
                     TransactionState.STATE_IN_PROGRESS.getCode(),
                     requestForm.getParams().getAccount().getOrder());
             orderTransactionRepository.save(orderTransaction);
-        }
 
+
+        }
         //AVVAL SAQLANGAN MUDDATI O'TMAGAN OrderTransaction YOKI YANGI SAQLANGAN OrderTransaction NING MA'LUMOTLARI QAYTARILYAPTI
         response.setResult(new ResultForm(
                 orderTransaction.getTransactionCreationTime().getTime(),

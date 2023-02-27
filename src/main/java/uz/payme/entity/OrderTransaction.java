@@ -1,7 +1,5 @@
 package uz.payme.entity;
-
 import lombok.*;
-
 import javax.persistence.*;
 import java.sql.Timestamp;
 
@@ -17,15 +15,10 @@ public class OrderTransaction {
 
     //PAYME TOMONIDAN BERILADIGAN ID
     private String transactionId;
-
     private Timestamp transactionCreationTime;
-
     private Timestamp performTime;
-
     private Timestamp cancelTime;
-
     private Integer reason;
-
     private Integer state;
 
     @JoinColumn(insertable = false, updatable = false)
